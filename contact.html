@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Davies Coding Solutions</title>
+
+        <!-- Favicon -->
+        <link 
+            rel="shortcut icon" 
+            type="image/png" 
+            href="img/Teal.ico" 
+            sizes="16x16">
+
+        <!-- Primary Font -->
+        <link 
+            rel="preconnect" 
+            href="https://fonts.googleapis.com">
+        <link 
+            rel="preconnect" 
+            href="https://fonts.gstatic.com" crossorigin>
+        <link 
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;700&display=swap" 
+            rel="stylesheet">
+
+        <!-- Secondary Font -->
+        <link 
+            rel="preconnect" 
+            href="https://fonts.googleapis.com">
+        <link 
+            rel="preconnect" 
+            href="https://fonts.gstatic.com" crossorigin>
+        <link 
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" 
+            rel="stylesheet">
+
+        <!-- Normalize -->
+        <link 
+            rel="stylesheet"   
+            type="text/css" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link 
+            rel="stylesheet" 
+            type="text/css" 
+            href="css/style.production.css">
+    </head>
+    <body>
+        <header class="page-header">
+
+            <!-- Logo here -->
+            <img 
+                src="img/dcs_logo.svg" 
+                alt="Davies Coding Solutions logo"
+                class="page-header__item--logo">
+
+            <!-- Main Menu -->
+            <nav class="main-navigation page-header__item">
+                <ul role="menubar" class="navigation-list">
+                    <li role="presentation">
+                        <a 
+                            href="index.html" 
+                            role="menuitem" 
+                            class="navigation-list__item navigation-list__item">Home
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a 
+                            href="about.html" 
+                            role="menuitem" 
+                            class="navigation-list__item">About Me
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a 
+                            href="work.html" 
+                            role="menuitem" 
+                            class="navigation-list__item">Portfolio
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a 
+                            href="contact.html" 
+                            role="menuitem" 
+                            class="navigation-list__item--active">Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Send me a message!</h1>
+
+        <!-- Message form -->
+        <div>
+            <form action="" method="post" id="contact-form">
+                <label class="standard-label" for="contact-email">* Email: </label>
+                <input type="email" id="contact-email" placeholder="example@email.com" required>
+
+                <label class="standard-label" for="contact-tel">Telephone: </label>
+                <input type="tel" id="contact-tel" placeholder="xxx-xxx-xxxx">
+
+                <label class="standard-label" for="contact-message">* Message: </label>
+                <textarea maxlength="240" id="contact-message" placeholder="Type up to 240 characters" required></textarea>
+
+                <!-- Send button -->
+                <input type="submit" value="Send message" id="send-button">
+
+                <p>* indicates required field</p>
+            </form>
+        </div>
+        <!-- Contact Info -->
+        <h1>Contact</h1>
+        <div id="contact-info">
+            Davies Coding Solutions<br>
+            New Orleans, Louisiana, USA<br>
+
+            <a href="https://join.skype.com/invite/ojiclGvd4E9D" target="_blank">Skype: Emily Davies</a><br>
+            <a href="mailto:emilygdavies42@gmail.com">Email: </a>
+            <a href="mailto:emilygdavies42@gmail.com">emilygdavies42@gmail.com</a>
+            <br>
+            <br>
+        </div>
+
+        <!-- Footer: links to social media profiles -->
+        <footer class="page-footer">
+            <div class="social media">
+
+                <!-- Github icon -->
+                 <a class="footer__social" href="https://github.com/Scaramouche9" target="_blank">
+                    <img src="img/github_icon.svg" alt="github icon">
+                </a>
+
+                <!-- Linkedin icon -->
+                <a class="footer__social" href="https://www.linkedin.com/in/emily-davies9/" target="_blank">
+                    <img src="img/linkedin_icon.svg" alt="linkedin icon">
+                </a>
+            </div>
+        </footer>
+        <script src="js/tota11y.min.js"></script>
+    </body>
+</html>
