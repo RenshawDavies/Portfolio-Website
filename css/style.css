@@ -144,20 +144,20 @@ th {
     width: 50%;
     height: auto;
 }
-#rect1312 {
-    fill: var(--secondary-color)
-}
-@keyframes color-change {
-    from {
-        fill: var(--secondary-color);
-    }
-    to {
-        fill: var(--primary-color-lighter);
-    }
-}
-#Layer_1, #adobe_illustrator_pgf {
-    animation: color-change 4s infinite alternate linear;
-}
+#about__main--img__fleur {
+    fill:#ff4f00;
+   }
+   #about__main--image__fleur:hover {
+   animation: color-change 2s infinite alternate linear;
+   }
+   @keyframes color-change {
+       from {
+           fill: #ff4f00;
+       }
+       to {
+           fill: #a4f4f4;
+       }
+   }   
 input {
     font-family: var(--secondary-font);
 }
@@ -181,9 +181,10 @@ input, textarea {
 .profile {
     max-width: 700px;
     margin: 0 auto;
+    text-align: center;
 }
 .profile__portrait {
-    float: left;
+    float: center;
     width: 50%; 
     height: auto;
     margin-right: 40px;
