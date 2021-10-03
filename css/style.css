@@ -13,6 +13,8 @@ Seondary Color Range (Red):
     #812800
     #351000
 */
+
+/* variables */
 :root {
     --primary-color: #00a8a8;
     --secondary-color: #ff4f00;
@@ -27,9 +29,13 @@ Seondary Color Range (Red):
     --secondary-font-weight: 200;
     --secondary-font-weight-bold: 500;
 }
+
+/* accounts for border and padding in content dimensions */
 * {
     box-sizing: border-box;
 }
+
+/* HEADER */
 .page-header {
     display: flex;
     width: 100%;
@@ -47,6 +53,8 @@ Seondary Color Range (Red):
     height: auto;
     margin-left: 5px;
 }
+
+/* Defaults for ALL */
 body {
     background-color: var(--primary-color-darker);
     color: var(--primary-color-lighter);
@@ -85,16 +93,12 @@ button,
 .button {
     /* overwrites browser defaults and resets the border */
     border: none;
-    /* takes the font from the outer container */
     font-family: inherit;
-    /* styles the button */
     background-color: var(--primary-color-lighter);
     color: var(--primary-color-darker);
     text-decoration: none;
-    /* adds spacing to the button */
     padding: 10px;
     border-radius: 3px;
-    /* gives the button a bottom border with a width of 2px, a type of solid, and a color */
     border-bottom: 2px solid var(--primary-color);
     font-family: var(--secondary-font);
     transition: 0.2s opacity;
@@ -166,6 +170,7 @@ th {
    }   
 
 /* PORTFOLIO */
+
 /* start grid fallback */
 .grid__item {
     display: inline-block;
@@ -258,7 +263,7 @@ input, textarea {
     text-decoration: none;
 }
 
-/* Responsive rules */
+/* Responsive rules for different screen sizes */
 @media all and (max-width: 750px) {
     .grid {
         grid-template-columns: 1fr 1fr;
