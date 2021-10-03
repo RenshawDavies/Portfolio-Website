@@ -100,6 +100,7 @@ button,
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid var(--primary-color);
+    border-right: 2px solid var(--primary-color);
     font-family: var(--secondary-font);
     transition: 0.2s opacity;
 }
