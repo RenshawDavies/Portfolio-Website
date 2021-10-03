@@ -67,19 +67,9 @@ a {
     font-family: var(--secondary-font);
     text-decoration: underline;
 }
-a:visited {
-    /* visited link */
-    color: var(--secondary-color-lighter);
-}
 a:hover, a:focus {
-    /* no underline when hovering over a link */
     text-decoration: none;
-    color: #ff4f00
-}
-a:active {
-    /* selected link */
-    color: var(--primary-color);
-    text-decoration: none;
+    color: var(--secondary-color)
 }
 .navigation-list {
     list-style-type: none;
@@ -118,6 +108,22 @@ button:focus,
     /* reduces the opacity of the button to 80% */
     opacity: 0.8;
 }
+
+/* HOME */
+.profile {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+.profile__portrait {
+    float: center;
+    width: 50%; 
+    height: auto;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+
+/* ABOUT */
 table {
     font-family: var(--secondary-font);
     font-weight: var(--secondary-font-weight);
@@ -145,73 +151,21 @@ th {
     height: auto;
 }
 #about__main--img__fleur {
-    fill:#ff4f00;
+    fill: var(--secondary-color);
    }
    #about__main--image__fleur:hover {
    animation: color-change 2s infinite alternate linear;
    }
    @keyframes color-change {
        from {
-           fill: #ff4f00;
+           fill: var(--secondary-color);
        }
        to {
-           fill: #a4f4f4;
+           fill: var(--primary-color-lighter);
        }
    }   
-input {
-    font-family: var(--secondary-font);
-}
-input, textarea {
-    background-color: var(--primary-color-lighter);
-}
-#send-button {
-    font-family: var(--primary-font-weight-bold);
-}
-#send-button:hover, #send-button:focus {
-    cursor: pointer;
-    opacity: 0.8;
-    font-family: var(--primary-font-weight-bold);
-}
-#contact__main {
-    width: 95%;
-    height: auto;
-    margin: auto;
-    padding: 10px;
-}
-#contact__form {
-    line-height: 10mm;
-    width: 50%;
-    height: auto;
-    float: left;
-}
-#contact__info {
-    line-height: 7mm;
-    float: left;
-    width: 50%;
-    height: auto;    
-}
-.profile {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
-}
-.profile__portrait {
-    float: center;
-    width: 50%; 
-    height: auto;
-    margin-right: 40px;
-    border-radius: 50%;
-}
-.page-footer {
-    clear: both;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-.footer__social {
-    text-decoration: none;
-}
 
+/* PORTFOLIO */
 /* start grid fallback */
 .grid__item {
     display: inline-block;
@@ -227,11 +181,15 @@ input, textarea {
     margin: 0;
 }
 .grid__item {
-    background-color: var(--secondary-color-lighter);
+    background-color: var(--primary-color-darker);
     width: auto;
     min-height: auto;
     margin: 0;
-    color: #002020;
+    color: var(--primary-color-lighter);
+    border-style: outset;
+    border-color: var(--secondary-color);
+    border-radius: 20%;
+    padding: 5%;
 }
 .grid__item:last-child {
     grid-column: 3/3;
@@ -239,6 +197,65 @@ input, textarea {
 }
 .grid__item--link {
     color: var(--primary-color-darker);
+}
+
+/* CONTACT */
+input {
+    font-family: var(--primary-font);
+}
+input, textarea {
+    background-color: var(--secondary-color-lighter);
+    
+}
+::placeholder {
+    color: var(--primary-color-darker);
+    opacity: 70%;
+}
+#send-button {
+    font-family: var(--primary-font);
+    background-color: var(--secondary-color-lighter);
+}
+#send-button:hover, #send-button:focus {
+    font-family: var(--primary-font);
+}
+#contact__main {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+}
+#contact__form {
+    line-height: 10mm;
+    width: 50%;
+    height: auto;
+    float: left;
+    border-style: outset;
+    border-color: var(--secondary-color);
+    border-radius: 20%;
+    padding: 5%;
+    font-family: var(--primary-font);
+}
+#contact__info {
+    line-height: 7mm;
+    float: left;
+    width: 50%;
+    height: auto; 
+    border-style: outset;
+    border-color: var(--secondary-color);
+    border-radius: 20%;
+    padding: 5%;   
+    font-family: var(--secondary-font);
+}
+
+/* FOOTER */
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footer__social {
+    text-decoration: none;
 }
 
 /* Responsive rules */
@@ -266,10 +283,3 @@ input, textarea {
     }
 }
 }
-
-/* Postprocessing! Once you’re done with the initial version of your website at the end of this course, we recommend doing the following:
-
-1. Run your transpiled CSS through the autoprefixer (or any other postprocessor you decide to use).
-2. Create a new CSS file called “style.production.css” and paste the output from the autoprefixer into this file.
-3. Update your links in the header of the CSS file to the new “style.production.css” file.
-4. Make sure you keep a copy of your original “styles.css” file. If you want to make any changes later, it’s best to make it in this file and repeat the process again. */
