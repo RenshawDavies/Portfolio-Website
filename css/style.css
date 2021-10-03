@@ -19,6 +19,7 @@ Seondary Color Range (Red):
     --primary-color: #00a8a8;
     --secondary-color: #ff4f00;
     --primary-color-lighter: #a4f4f4;
+    --primary-color-dark: #004d4d;
     --primary-color-darker: #002020;
     --secondary-color-lighter: #ffc6ac;
     --secondary-color-darker: #351000;
@@ -210,19 +211,23 @@ input {
     font-family: var(--primary-font);
 }
 input, textarea {
-    background-color: var(--secondary-color-lighter);
-    
+    background-color: var(--primary-color-dark);
+    border-color: var(--primary-color-lighter);
 }
 ::placeholder {
-    color: var(--primary-color-darker);
+    color: var(--primary-color-lighter);
     opacity: 70%;
+}
+#contact-message {
+    width: 35%;
 }
 #send-button {
     font-family: var(--primary-font);
-    background-color: var(--secondary-color-lighter);
+
 }
 #send-button:hover, #send-button:focus {
     font-family: var(--primary-font);
+    color: var(--secondary-color);
 }
 #contact__main {
     width: 95%;
