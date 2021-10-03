@@ -164,14 +164,13 @@ input {
 input, textarea {
     background-color: var(--primary-color-lighter);
 }
-/* #send-button {
-    background-color: #004d4d;
-    color: #a4f4f4;
-} */
+#send-button {
+    font-family: var(--primary-font-weight-bold);
+}
 #send-button:hover, #send-button:focus {
     cursor: pointer;
     opacity: 0.8;
-    font-family: var(--secondary-font-weight);
+    font-family: var(--primary-font-weight-bold);
 }
 #contact__main {
     width: 95%;
@@ -179,13 +178,13 @@ input, textarea {
     margin: auto;
     padding: 10px;
 }
-#contact-form {
-    line-height: 20mm;
+#contact__form {
+    line-height: 10mm;
     width: 50%;
     height: auto;
     float: left;
 }
-#contact-info {
+#contact__info {
     line-height: 7mm;
     float: left;
     width: 50%;
