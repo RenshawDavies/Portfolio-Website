@@ -40,6 +40,7 @@ Seondary Color Range (Red):
 .page-header {
     display: flex;
     width: 100%;
+    height: 25%;
     padding: 20px;
     position: fixed;
     top: 0;
@@ -127,7 +128,9 @@ button:focus,
 /* HOME */
 .profile {
     max-width: 700px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12%;
     text-align: center;
 }
 .profile__portrait {
@@ -175,7 +178,9 @@ td {
 #about__main {
     width: 95%;
     height: auto;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12%;
     padding: 10px;
 }
 #about__main--text {
@@ -212,6 +217,12 @@ td {
     width: 33%;
 }
 /* end grid fallback */
+
+section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12%;
+}
 
 @supports (display: grid) {
 .grid {
@@ -265,7 +276,9 @@ input, textarea {
 #contact__main {
     width: 95%;
     height: auto;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12%;
     padding: 10px;
 }
 #contact__form {
