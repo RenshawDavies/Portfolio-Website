@@ -282,6 +282,9 @@ input, textarea {
     h1 {
         font-size: 27px;
     }
+    .page-header {
+        align-content: center;
+    }
 }
 
 @media all and (max-width: 500px) {
