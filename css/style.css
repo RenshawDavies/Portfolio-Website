@@ -158,9 +158,9 @@ th {
 }
 #about__main--img__fleur {
     fill: var(--secondary-color);
-   }
-   #about__main--image__fleur:hover {
-   animation: color-change 2s infinite alternate linear;
+    width: 30%;
+    height: auto;
+    animation: color-change 8s infinite alternate linear;
    }
    @keyframes color-change {
        from {
