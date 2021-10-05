@@ -51,16 +51,20 @@ Seondary Color Range (Red):
     background-color: var(--primary-color-darker);
 }
 .page-header__item {
-    flex: 0 1 200px;
+    flex: 1 1 50%;
 }
-.page-header__item:last-child {
+nav {
     flex-grow: 1;
+    flex-shrink: 1;
     text-align: right;
+    padding-left: 1%;
 }
-.page-header__item--logo {
+#davies-logo {
     width: 50%;
     height: auto;
     margin-left: 1%;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 /* Defaults for ALL */
@@ -95,7 +99,7 @@ a:hover, a:focus {
 }
 .navigation-list li {
     display: inline-block;
-    margin-left: 15px;
+    margin-left: 2%;
 }
 .navigation-list__item--active {
     text-decoration: none;
@@ -314,8 +318,15 @@ input, textarea {
 
 /* Responsive rules for different screen sizes */
 @media all and (max-width: 1300px) {
-
+    nav {
+        font-size: 22px;
+    }
 }    
+@media all and (max-width: 1000px) {
+    nav {
+        font-size: 16px;
+    }
+}  
 @media all and (max-width: 750px) {
     .work__grid {
         grid-template-columns: 1fr 1fr;
