@@ -61,7 +61,7 @@ nav {
   padding-left: 1%;
 }
 
-#davies-logo {
+.page-header__item--logo {
   width: 50%;
   height: auto;
   margin-left: 1%;
@@ -375,14 +375,11 @@ textarea {
 
   .page-header {
     flex-direction: column;
+    justify-content: center;
   }
 
   .page-header__item {
     flex: 1 1 100%;
-  }
-
-  #davies-logo {
-    justify-content: center;
   }
 
   nav {
