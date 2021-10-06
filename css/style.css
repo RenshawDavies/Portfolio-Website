@@ -374,6 +374,7 @@ textarea {
   }
 
   .page-header {
+    width: 95%;
     flex-direction: column;
     justify-content: center;
   }
