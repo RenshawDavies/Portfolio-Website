@@ -38,6 +38,10 @@ Seondary Color Range (Red):
 
 /* Defaults for ALL */
 body {
+<<<<<<< Updated upstream
+=======
+  max-width: 100%;
+>>>>>>> Stashed changes
   background-color: var(--primary-color-darker);
   color: var(--primary-color-lighter);
   font-family: var(--primary-font);
