@@ -37,19 +37,14 @@ Seondary Color Range (Red):
 }
 
 /* Defaults for ALL */
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
 body {
   background-color: var(--primary-color-darker);
   color: var(--primary-color-lighter);
   font-family: var(--primary-font);
   font-weight: var(--primary-font-weight-regular);
   margin: 2%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 h1 {
