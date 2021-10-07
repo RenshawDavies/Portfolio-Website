@@ -41,7 +41,7 @@ html,
 body {
   max-width: 100%;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 body {
@@ -50,11 +50,6 @@ body {
   font-family: var(--primary-font);
   font-weight: var(--primary-font-weight-regular);
   margin: 2%;
-}
-
-body:hover,
-body:focus {
-  overflow-y: auto;
 }
 
 h1 {
