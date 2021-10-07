@@ -117,11 +117,6 @@ button:focus,
   justify-content: center;
 }
 
-ul {
-  margin: 0;
-  font-size: 0;
-}
-
 .navigation__list {
   list-style-type: none;
   display: flex;
@@ -141,16 +136,18 @@ li {
   font-size: 30px;
   text-align: center;
   display: inline-block;
-  border: solid 1px yellow;
+  border: solid var(--secondary-color);
+  border-radius: 20%;
 }
 
 .navigation__list--item {
-  border: solid 1px red;
   justify-content: center;
+  text-decoration: none;
 }
 
 .navigation__list--item__active {
   text-decoration: none;
+  color: var(--secondary-color);
 }
 
 /* HOME */
@@ -382,6 +379,10 @@ textarea {
     font-size: 27px;
   }
 
+  li {
+    font-size: 20px;
+  }
+
   .about__grid {
     grid-template-columns: 1fr;
   }
@@ -429,6 +430,12 @@ textarea {
 @media all and (max-width: 500px) {
   .header__item--menu {
     font-size: 20px;
+  }
+
+  li {
+    font-size: 12px;
+    line-height: 12px;
+    border-width: 2px;
   }
 
   .work__grid {
