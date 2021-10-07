@@ -58,7 +58,7 @@ h1 {
 
 a {
   color: var(--primary-color-lighter);
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   text-decoration: underline;
 }
 
@@ -104,8 +104,9 @@ button:focus,
 
 .header__item {
   display: flex;
-  justify-content: center;
   width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .header__item--logo {
@@ -116,24 +117,40 @@ button:focus,
   justify-content: center;
 }
 
+ul {
+  margin: 0;
+  font-size: 0;
+}
+
 .navigation__list {
   list-style-type: none;
   display: flex;
-  float: right;
   width: 100%;
   flex-grow: 1;
   flex-shrink: 1;
   padding: 0;
+  font-size: 0;
 }
 
 li {
-  display: flex;
   padding: 0;
   width: 100%;
   margin-right: 0;
   justify-content: center;
-  font-family: "Nunito" sans-serif;
+  font-weight: 700;
   font-size: 30px;
+  text-align: center;
+  display: inline-block;
+  border: solid 1px yellow;
+}
+
+.navigation__list--item {
+  border: solid 1px red;
+  justify-content: center;
+}
+
+.navigation__list--item__active {
+  text-decoration: none;
 }
 
 /* HOME */
@@ -410,6 +427,10 @@ textarea {
 }
 
 @media all and (max-width: 500px) {
+  .header__item--menu {
+    font-size: 20px;
+  }
+
   .work__grid {
     grid-template-columns: 1fr;
     grid-gap: 10px;
