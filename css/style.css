@@ -339,6 +339,12 @@ td {
   text-decoration: none;
 }
 
+.footer__social:hover,
+.footer__social:focus {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 /* Responsive rules for different screen sizes */
 
 @media all and (max-width: 750px) {
@@ -412,4 +418,5 @@ td {
   .about__grid {
     font-size: 50%;
   }
+}
 }
