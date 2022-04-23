@@ -75,7 +75,7 @@ button,
   border-radius: 3px;
   border-bottom: 2px solid var(--primary-color);
   border-right: 2px solid var(--primary-color);
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   transition: 0.2s opacity;
 }
 
@@ -304,7 +304,7 @@ td {
 #contact__info {
   font-size: 2em;
   line-height: 7mm;
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   text-align: center;
 }
 
