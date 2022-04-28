@@ -23,6 +23,7 @@ Seondary Color Range (Red):
   --primary-color-darker: #002020;
   --secondary-color-lighter: #5ee5e5;
   --secondary-color-darker: #000000;
+  --accent-color: #ea4139;
   --primary-font: 'Josefin Sans', sans-serif;
   --secondary-font: 'Playfair Display', serif;
   --primary-font-weight-regular: 200;
@@ -62,7 +63,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--accent-color);
 }
 
 button,
@@ -89,6 +90,9 @@ button:focus,
 
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
+
+  background-color: var(--accent-color);
+  color: var(--secondary-color-lighter);
 }
 
 /* BORDER */
