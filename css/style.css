@@ -294,21 +294,6 @@ td {
   width: 250px;
 }
 
-#send-button {
-  font-family: var(--primary-font);
-}
-
-#send-button:hover,
-#send-button:focus {
-  font-family: var(--primary-font);
-  color: var(--secondary-color);
-}
-
-#contact__form {
-  line-height: 1em;
-  font-family: var(--primary-font);
-}
-
 #contact__info {
   font-size: 2em;
   line-height: 7mm;
