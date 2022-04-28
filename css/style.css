@@ -43,7 +43,6 @@ body {
   color: var(--primary-color-lighter);
   font-family: var(--primary-font);
   font-weight: var(--primary-font-weight-regular);
-  margin: 2%;
   max-width: 100%;
   overflow-x: hidden;
   padding: 40px;
@@ -153,8 +152,9 @@ button:focus,
 }
 
 /* HOME */
-#profile {
-  text-align: center;
+
+#home {
+  margin: 5%;
 }
 
 .greeting {
@@ -196,11 +196,11 @@ button:focus,
   display: inline-block;
   width: 33%;
 }
-
 /* end grid fallback */
+
 #about__main {
-  overflow-x: hidden;
-  padding: 2%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 #about__main--text__p {
@@ -275,7 +275,7 @@ table, th, td {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-    margin: 0;
+    margin: 5%;
   }
 
   .work__grid--item {
