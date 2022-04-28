@@ -250,6 +250,14 @@ table, th, td {
   border-color: var(--secondary-color);
   padding: 1%;
 }
+
+#resume-container {
+  text-align: center;
+}
+
+#resume-button {
+  display: inline-block;
+
 }
 
 /* PORTFOLIO */
