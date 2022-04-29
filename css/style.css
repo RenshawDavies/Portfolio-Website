@@ -173,7 +173,7 @@ button:focus,
 /* ABOUT */
 
 /* start grid fallback */
-.work__grid--item {
+.about__grid--item {
   display: inline-block;
   width: 33%;
 }
@@ -184,10 +184,9 @@ button:focus,
   margin-right: 15%;
 }
 
-#about__main--text__p {
+#about__main--text {
   line-height: 25px;
   width: 100%;
-
 }
 
 @supports (display: grid) {
