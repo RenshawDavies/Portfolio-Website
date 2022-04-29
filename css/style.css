@@ -1,20 +1,4 @@
-/* Colors used:
-
-Primary Color Range (Teal):
-    #a4f4f4
-    #5ee5e5
-    #00a8a8
-    #004d4d
-    #002020
-Seondary Color Range (Red):
-    #ffc6ac
-    #ff9869
-    #ff4f00
-    #812800
-    #351000
-*/
-
-/* variables */
+/* Variables */
 :root {
   --primary-color: #00a8a8;
   --secondary-color: #a4f4f4;
@@ -25,11 +9,8 @@ Seondary Color Range (Red):
   --secondary-color-darker: #000000;
   --accent-color: #ea4139;
   --primary-font: 'Josefin Sans', sans-serif;
-  --secondary-font: 'Playfair Display', serif;
   --primary-font-weight-regular: 200;
   --primary-font-weight-bold: 400;
-  --secondary-font-weight-regular: 400;
-  --secondary-font-weight-bold: 700;
 }
 
 /* accounts for border and padding in content dimensions */
