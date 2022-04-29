@@ -13,7 +13,7 @@
   --primary-font-weight-bold: 400;
 }
 
-/* accounts for border and padding in content dimensions */
+/* Accounts for border and padding in content dimensions */
 * {
   box-sizing: border-box;
 }
