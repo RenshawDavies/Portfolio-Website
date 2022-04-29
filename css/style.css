@@ -2,12 +2,12 @@
 :root {
   --primary-color: #00a8a8;
   --secondary-color: #a4f4f4;
+  --accent-color: #ea4139;
   --primary-color-lighter: #f2ecda;
   --primary-color-dark: #004d4d;
   --primary-color-darker: #002020;
   --secondary-color-lighter: #5ee5e5;
   --secondary-color-darker: #000000;
-  --accent-color: #ea4139;
   --primary-font: 'Josefin Sans', sans-serif;
   --primary-font-weight-regular: 200;
   --primary-font-weight-bold: 400;
@@ -143,6 +143,10 @@ button:focus,
   flex-flow: row wrap;
 }
 
+.greeting__item {
+  padding: 2%;
+}
+
 #home__img {
   border-radius: 50%;
   grid-column: 1/2;
@@ -164,10 +168,6 @@ button:focus,
   grid-row: 3/4;
   justify-self: center;
   align-self: center;
-}
-
-.greeting__item {
-  padding: 2%;
 }
 
 /* ABOUT */
