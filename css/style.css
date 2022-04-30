@@ -4,10 +4,8 @@
   --secondary-color: #a4f4f4;
   --accent-color: #ea4139;
   --primary-color-lighter: #f2ecda;
-  --primary-color-dark: #004d4d;
   --primary-color-darker: #002020;
-  --secondary-color-lighter: #5ee5e5;
-  --secondary-color-darker: #000000;
+  --secondary-color-darker: #5ee5e5;
   --primary-font: 'Josefin Sans', sans-serif;
   --primary-font-weight-regular: 200;
   --primary-font-weight-bold: 400;
@@ -65,7 +63,7 @@ button:focus,
   cursor: pointer;
   opacity: 0.8;
   background-color: var(--accent-color);
-  color: var(--secondary-color-lighter);
+  color: var(--secondary-color-darker);
 }
 
 /* BORDER */
@@ -165,7 +163,13 @@ button:focus,
 
 /* ABOUT */
 
+.about__h1 {
+  color: var(--primary-color-lighter);
   text-align: center;
+}
+
+.about__h2 {
+  color: var(--primary-color-lighter);
   text-align: center;
 }
 
