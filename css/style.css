@@ -316,6 +316,10 @@ table, th, td {
 }
 
 @media all and (max-width: 450px) {
+
+  .top, .bottom, .left, .right {
+    width: 0px;
+  }
   li {
     font-size: 12px;
     line-height: 12px;
