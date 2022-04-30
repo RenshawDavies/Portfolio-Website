@@ -348,8 +348,12 @@ table, th, td {
   }
   
   .work__grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 15px;
+  }
+
+  .work__grid--item {
+    padding: 10%;
   }
 
   .work__grid--item:last-child {
