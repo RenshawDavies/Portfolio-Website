@@ -1,144 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Work - Emily Davies: Coding Puzzling, Musicing</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Work - Emily Davies: Coding, Puzzling, Musicing</title>
 
-        <!-- Favicon -->
-        <link
-            rel="shortcut icon"
-            type="image/png"
-            href="img/Teal.ico"
-            sizes="16x16">
+      <!-- Favicon -->
+      <link
+        rel="shortcut icon"
+        type="image/png"
+        href="img/Teal.ico"
+        sizes="16x16">
 
-        <!-- Fonts -->
-        <link 
-          rel="preconnect" 
-          href="https://fonts.googleapis.com">
-        <link  
-          rel="preconnect" 
-          href="https://fonts.gstatic.com" crossorigin>
-        <link 
-          href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&family=Playfair+Display:wght@400;700&display=swap" 
-          rel="stylesheet">
+      <!-- Fonts -->
+      <link 
+        rel="preconnect" 
+        href="https://fonts.googleapis.com">
+      <link  
+        rel="preconnect" 
+        href="https://fonts.gstatic.com" 
+        crossorigin>
+      <link 
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap" 
+        rel="stylesheet">
 
-        <!-- Font Awesome Icon Kit -->
-        <link 
-          rel="stylesheet" 
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Normalize -->
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="css/style.css">
 
-        <!-- Normalize -->
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="css/style.css">
-    </head>
-    <body>
+      <!-- Browswer support for fixed positioning -->
+      <!--[if lte IE 6]>
+	      <style>#top, #bottom, #left, #right { display: none; }</style>
+        <![endif]
+      -->
+  </head>
+  <body>
 
-        <!-- Main Menu -->
-        <nav class="header__item">
-          <ul role="menubar" class="navigation__list">
-            <li role="presentation" class="navigation__li">
-              <a
-                href="index.html"
-                role="menuitem"
-                class="navigation__list--item">
-                <i class="fa fa-solid fa-house" alt="home icon, house"></i>
-                Home
-              </a>
-            </li>
-            <li role="presentation" class="navigation__li">
-              <a
-                href="about.html"
-                role="menuitem"
-                class="navigation__list--item">
-                <i class="fa fa-solid fa-puzzle-piece" alt="about icon, jigsaw puzzle piece"></i>
-                About
-              </a>
-            </li>
-            <li role="presentation" class="navigation__li">
-              <a
-                href="work.html"
-                role="menuitem"
-                class="navigation__list--item__active">
-                <i class="fa fa-solid fa-code" alt="portfolio icon, angle brackets"></i>
-                Portfolio
-              </a>
-            </li>
-            <li role="presentation" class="navigation__li">
-              <a
-                href="contact.html"
-                role="menuitem"
-                class="navigation__list--item">
-                <i class="fa fa-solid fa-envelope" alt="contact icon, envelope"></i>
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
+    <!-- Body Border -->
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="top"></div>
+    <div class="bottom"></div>
 
-        <!-- Portfolio content begins -->
-        <section class="content"> <br><br>
-            <div class="work__grid">
+    <!-- Main Menu -->
+    <nav>
+      <ul role="menubar" class="navigation__list">
+        <li role="presentation" class="navigation__li">
+          <a
+            href="index.html"
+            role="menuitem"
+            class="navigation__list--item">
+            Home
+          </a>
+        </li>
+        <li role="presentation" class="navigation__li">
+          <a
+            href="about.html"
+            role="menuitem"
+            class="navigation__list--item">
+            About
+          </a>
+        </li>
+        <li role="presentation" class="navigation__li">
+          <a
+            href="work.html"
+            role="menuitem"
+            class="navigation__list--item__active">
+            Portfolio
+          </a>
+        </li>
+        <li role="presentation" class="navigation__li">
+          <a
+            href="contact.html"
+            role="menuitem"
+            class="navigation__list--item">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-                <!-- Portfolio items in grid -->
-                <div class="work__grid--item">
-                    <h2>Pokedex!</h2>
-                      <p>This app is a quick reference for facts and images of all your favorite pokemon. Click any pokemon name button to see a picture of the pokemon, as well as height, weight, and type.</p>
-                      <p>This app was built using HTML5, SCSS, and JavaScript ES6 languages. After learning to create modals from scratch, I used bootstrap frameworks to create the navbar and modals. Pokemon data is drawn from the external api, <a class="grid__item--link" href="https://pokeapi.co/">https://pokeapi.co/</a>, using AJAX. I used ESLint and Prettier to ensure my code was error-free.</p>
-                      <a class="grid__item--link" href="https://scaramouche9.github.io/simple_js_app/">View app</a>
-                      <br>
-                      <a class="grid__item--link" href="https://github.com/Scaramouche9/simple_js_app" >View code on Github</a>
-                </div>
-                <div class="work__grid--item">
-                    <h2>2. Server-Side Programming and Node.js</h2>
-                    <p>Learn about Node.js, work with APIs, design and create databases, modify an API</p>
-                    <a class="grid__item--link" href="#" >View project on Github</a>
-                </div>
-                <div class="work__grid--item">
-                    <h2>3. Client-Side Programming and React</h2>
-                    <p>Learn about Frameworks, Libraries, React, Redux</p>
-                    <a class="grid__item--link" href="#" >View project on Github</a>
-                </div>
-                <div class="work__grid--item">
-                    <h2>4. Test-Driven Development and Test Scenarios</h2>
-                    <p>Discuss testing during the developmant process, create serverless deployment package</p>
-                    <a class="grid__item--link" href="#" >View project on Github</a>
-                </div>
-                <div class="work__grid--item">
-                    <h2>5. Native App Development and React Native</h2>
-                    <p>Build Native application, implement chat UI, communication features, and JavaScript APIs</p>
-                    <a class="grid__item--link" href="#" >View project on Github</a>
-                </div>
-                <div class="work__grid--item">
-                    <h2>6. Collaboration and Documentation</h2>
-                    <p>Discuss collaboration techniques, agile project management, project requirements, story points, TypeScript; create app using Angular CLI, implement movie card component in app, implement comments in code, discuss best practices, curate deliverables for portfolio</p>
-                    <a class="grid__item--link" href="#" >View project on Github</a>
-                </div>
-            </div>
-        </section><br>
+    <!-- Portfolio content begins -->
+    <section>
+      <div class="work__grid">
 
-        <!-- Footer: links to social media profiles -->
-        <footer class="page-footer">
-            <div class="social-media">
+        <!-- Portfolio items in grid -->
+        <div class="work__grid--item">
+          <h2>Portfolio Website</h2>
+          <p>I built this website from scratch as a playground to try new techniques I learn and showcase my favorite work while conveying my tastes and personality.</p>
+          <p>This was my first go at implementing HTML5 and CSS. I've experimented with tables, flexbox and grid layouts, and design principles, to name a few.</p>
+          <a href="https://scaramouche9.github.io/Portfolio-Website/" target="_blank" >View website</a>
+          <br>
+          <a href="https://github.com/Scaramouche9/Portfolio-Website" target="_blank" >View code on Github</a>
+        </div>
+        <div class="work__grid--item">
+          <h2>Pokedex!</h2>
+          <p>This app is a quick reference for facts and images of all your favorite pokemon. Click any pokemon name button to see a picture of the pokemon, as well as height, weight, and type.</p>
+          <p>This app was built using HTML5, SCSS, and JavaScript ES6. After learning to create modals from scratch, I used bootstrap frameworks to create the navbar and modals. Pokemon data is drawn from the external api, <a class="grid__item--link" href="https://pokeapi.co/">https://pokeapi.co/</a>, using AJAX. I used ESLint and Prettier to ensure my code was error-free.</p>
+          <a href="https://scaramouche9.github.io/Pokedex/" target="_blank" >View app</a>
+          <br>
+          <a href="https://github.com/Scaramouche9/Pokedex" target="_blank" >View code on Github</a>
+        </div>
+        <div class="work__grid--item">
+          <h2>To-do List</h2>
+          <p>A no-nonsense app that creates lists, letting users add, delete, reorder, and cross off items</p>
+          <p>I customized html and css templates and wrote the JavaScript for this app using the jQuery library. </p>
+          <a href="https://scaramouche9.github.io/to-do-today/" target="_blank" >View app</a>
+          <br>
+          <a href="https://github.com/Scaramouche9/to-do-today" target="_blank" >View code on Github</a>
+        </div>
+      </div>
+    </section>
+    
+    <br>
 
-                <!-- Github icon -->
-                 <a class="footer__social" href="https://github.com/Scaramouche9" target="_blank">
-                    <img src="img/github_icon.svg" alt="github icon">
-                </a>
+    <!-- Footer: links to social media profiles -->
+    <footer class="page-footer">
+      <div>
 
-                <!-- Linkedin icon -->
-                <a class="footer__social" href="https://www.linkedin.com/in/emily-davies9/" target="_blank">
-                    <img src="img/linkedin_icon.svg" alt="linkedin icon">
-                </a>
-            </div>
-        </footer>
-        <!-- accessibility checklist -->
-        <script src="js/tota11y.min.js"></script>
-    </body>
+        <!-- Github icon -->
+        <a class="footer__social" href="https://github.com/Scaramouche9" target="_blank">
+          <img src="img/github_icon.svg" alt="github icon">
+        </a>
+
+        <!-- Linkedin icon -->
+        <a class="footer__social" href="https://www.linkedin.com/in/emily-davies9/" target="_blank">
+          <img src="img/linkedin_icon.svg" alt="linkedin icon">
+        </a>
+      </div>
+    </footer>
+
+    <!-- Accessibility checklist -->
+    <script src="js/tota11y.min.js"></script>
+    
+  </body>
 </html>

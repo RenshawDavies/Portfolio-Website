@@ -1,152 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Home - Emily Davies: Coding Puzzling, Musicing</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home - Emily Davies: Coding, Puzzling, Musicing</title>
 
-        <!-- Favicon -->
-        <link
-            rel="shortcut icon"
-            type="image/png"
-            href="img/Teal.ico"
-            sizes="16x16">
+      <!-- Favicon -->
+      <link
+        rel="shortcut icon"
+        type="image/png"
+        href="img/Teal.ico"
+        sizes="16x16">
 
-        <!-- Fonts -->
-        <link 
-          rel="preconnect" 
-          href="https://fonts.googleapis.com">
-        <link  
-          rel="preconnect" 
-          href="https://fonts.gstatic.com" crossorigin>
-        <link 
-          href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&family=Playfair+Display:wght@400;700&display=swap" 
-          rel="stylesheet">
+      <!-- Fonts -->
+      <link 
+        rel="preconnect" 
+        href="https://fonts.googleapis.com">
+      <link  
+        rel="preconnect" 
+        href="https://fonts.gstatic.com" 
+        crossorigin>
+      <link 
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap" 
+        rel="stylesheet">
 
+      <!-- Normalize -->
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
-        <!-- Font Awesome Icon Kit -->
-        <link 
-          rel="stylesheet" 
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Stylesheet -->
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="css/style.css">
 
-        <!-- Normalize -->
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+      <!-- Browswer support for fixed positioning -->
+      <!--[if lte IE 6]>
+	      <style>#top, #bottom, #left, #right { display: none; }</style>
+        <![endif]
+      -->
 
-        <!-- Stylesheet -->
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="css/style.css">
-    </head>
-    <body>
+  </head>
+  <body>
+
+    <!-- Body Border -->
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="top"></div>
+    <div class="bottom"></div>
       
-        <!-- Main Menu -->
-        <nav class="header__item">
-          <ul role="menubar" class="navigation__list">
-            <li role="presentation" class="navigation__li">
-              <a
-                href="index.html"
-                role="menuitem"
-                class="navigation__list--item__active">
-                <i class="fa fa-solid fa-home fa-active" alt="home icon, house"></i>
-                Home
-              </a>
-            </li>
-            <li role="presentation" class="navigation__li">
-              <a
-                href="about.html"
-                role="menuitem"
-                class="navigation__list--item">
-                <i class="fa fa-solid fa-puzzle-piece" alt="about icon, jigsaw puzzle piece"></i>
-                About
-              </a>
-            </li>
-            <li role="presentation" class="navigation__li">
-              <a
-                href="work.html"
-                role="menuitem"
-                class="navigation__list--item">
-                <i class="fa fa-solid fa-code" alt="portfolio icon, angle brackets"></i>
-                Portfolio
-              </a>
-            </li>
-            <li role="presentation" class="navigation__li">
-              <a
-                href="contact.html"
-                role="menuitem"
-                class="navigation__list--item">
-                <i class="fa fa-solid fa-envelope" alt="contact icon, envelope"></i>
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
+    <!-- Main Menu -->
+    <nav>
+      <ul role="menubar" class="navigation__list">
+        <li role="presentation" class="navigation__li">
+          <a
+            href="index.html"
+            role="menuitem"
+            class="navigation__list--item__active">
+            Home
+          </a>
+        </li>
+        <li role="presentation" class="navigation__li">
+          <a
+            href="about.html"
+            role="menuitem"
+            class="navigation__list--item">
+            About
+          </a>
+        </li>
+        <li role="presentation" class="navigation__li">
+          <a
+            href="work.html"
+            role="menuitem"
+            class="navigation__list--item">
+            Portfolio
+          </a>
+        </li>
+        <li role="presentation" class="navigation__li">
+          <a
+            href="contact.html"
+            role="menuitem"
+            class="navigation__list--item">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-      <!-- Home content begins -->
-      <main id="home" class="content">
-        <div class="greeting">
+    <!-- Home content begins -->
+    <main id="home">
+      <div class="greeting">
+
         <!-- Photo of self -->
         <img 
           src="img/Teal.ico" 
           alt="Photo of Emily Davies"
           width="250"
           height="250"
-          class="home__item greeting__item"
+          class="greeting__item"
           id="home__img">
             
-        <h1 class="home__item greeting__item" id="home__h1">
-          Hi, I'm Emily! I'm a coder currently based in Portland, Oregon
-        </h1><br>
+        <h1 class="greeting__item" id="home__h1">
+          Hi, I'm Emily! I'm a coder based in Portland, Oregon
+        </h1>
+        
+        <br>
+        
+        <a href="work.html" class="button" id="home__button"> Here's some cool stuff I made!</a>
       </div>
-        <p class="home__item">I love:</p>
-        <ul class="home__item">
-          <li class="index__p">Solving Puzzles: some favorites are Happy Cubes, Grid Logic, Nonograms, and Wordle variations</li>
-          <li class="index__p">Playing music: I was in a band for almost 10 years, singing, touring recording, learning to play synth</li>
-          <li class="index__p">Planning trips: I charted routes and booked shows for a 3 month tour through US and Canada... out of a sedan!</li>            <li class="index__p">Camels: Did you know camels have 3 sets of eyelids to keep sand out?</li>
-          <li class="index__p">Coding of course! Maybe one day my code will keep up with my ideas for apps, but I doubt it</li>
-        </ul>
-      </nav>
-    </header><br>
+    </main>
 
-        <!-- Home content begins -->
-        <main id="profile" class="content">
+    <!-- Footer: links to social media profiles -->
+    <footer class="page-footer">
+      <div>
 
-            <h1>Hello and Welcome!</h1>
+        <!-- Github icon -->
+        <a class="footer__social" href="https://github.com/Scaramouche9" target="_blank">
+          <img src="img/github_icon.svg" alt="github icon">
+        </a>
 
-            <!-- Photo of self -->
-            <img src="img/Teal.ico" id="profile__portrait" alt="Photo of Emily Davies"
-                width="250"
-                height="250">
-            <p>
-                My name is Emily Davies. I am a web developer from New Orleans, Louisiana.
-            </p><br>
+        <!-- Linkedin icon -->
+        <a class="footer__social" href="https://www.linkedin.com/in/emily-davies9/" target="_blank">
+          <img src="img/linkedin_icon.svg" alt="linkedin icon">
+        </a>
+      </div>
+    </footer>
+  
+    <!-- Accessibility checklist -->
+    <script src="js/tota11y.min.js"></script>
 
-            <!-- button -->
-            <a href="work.html" class="button"> Click for examples of my work</a>
-            <br>
-            <br>
-            <br>
-        </main>
-
-        <!-- Footer: links to social media profiles -->
-        <footer class="page-footer">
-            <div class="social-media">
-
-                <!-- Github icon -->
-                 <a class="footer__social" href="https://github.com/Scaramouche9" target="_blank">
-                    <img src="img/github_icon.svg" alt="github icon">
-                </a>
-
-                <!-- Linkedin icon -->
-                <a class="footer__social" href="https://www.linkedin.com/in/emily-davies9/" target="_blank">
-                    <img src="img/linkedin_icon.svg" alt="linkedin icon">
-                </a>
-            </div>
-        </footer>
-        <!-- accessibility checklist -->
-        <script src="js/tota11y.min.js"></script>
-    </body>
+  </body>
 </html>
