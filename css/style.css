@@ -176,6 +176,10 @@ button:focus,
   text-align: center;
 }
 
+#puzzles {
+  font-size: 300%;
+}
+
 #about__main {
   margin-left: 10%;
   margin-right: 10%;
@@ -292,8 +296,21 @@ table, th, td {
     font-size: 130%;
   }
 
+  .about__h2 {
+    font-size: 130%;
+  }
+}
+
+  .about__h1 {
+    font-size: 100%;
   }
 
+  .about__h2 {
+    font-size: 100%;
+  }
+
+  #puzzles {
+    font-size: 170%;
   }
 
   .work__grid {
@@ -317,6 +334,14 @@ table, th, td {
   .top, .bottom, .left, .right {
     width: 0px;
   }
+  #about__main {
+    font-size: 50%;
+  }
+
+  #puzzles {
+    font-size: 200%;
+  }
+
   li {
     font-size: 12px;
     line-height: 12px;
