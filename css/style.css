@@ -315,7 +315,7 @@ table, th, td {
   }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 450px) {
   li {
     font-size: 12px;
     line-height: 12px;
