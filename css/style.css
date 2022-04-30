@@ -165,39 +165,20 @@ button:focus,
 
 /* ABOUT */
 
-/* start grid fallback */
-.about__grid--item {
-  display: inline-block;
-  width: 33%;
+  text-align: center;
+  text-align: center;
 }
-/* end grid fallback */
 
 #about__main {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 5%;
 }
 
 #about__main--text {
   line-height: 25px;
   width: 100%;
-}
-
-@supports (display: grid) {
-  .about__grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-  }
-
-  .about__grid--item:first-child {
-    grid-column: 1/3;
-    grid-row: 1/2;
-  }
-
-  .about__grid--item:last-child {
-    grid-column: 3/4;
-    grid-row: 1/2;
-  }
+  text-align: center;
 }
 
 table, th, td {
@@ -212,7 +193,6 @@ table, th, td {
 
 #resume-button {
   display: inline-block;
-
 }
 
 /* PORTFOLIO */
@@ -259,15 +239,7 @@ table, th, td {
   text-align: center;
 }
 
-@supports (display: grid) {
-  .contact__grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    margin: 0;
-  }
-
-  .contact__grid--item {
+  .contact__item {
     background-color: var(--primary-color-darker);
     width: auto;
     color: var(--primary-color-lighter);
@@ -276,6 +248,8 @@ table, th, td {
     border-radius: 20%;
     padding: 5%;
     margin: auto;
+    margin-top: 5%;
+    width: 50%;
   }
 
 /* FOOTER */
@@ -307,18 +281,12 @@ table, th, td {
     font-size: 20px;
   }
 
-  .about__grid {
-    grid-template-columns: 1fr;
+  .about__h1 {
+    font-size: 130%;
   }
 
-  .about__grid--item:first-child {
-    grid-column: 1/2;
-    grid-row: 1/3;
   }
 
-  .about__grid--item:last-child {
-    grid-column: 1/2;
-    grid-row: 4/5;
   }
 
   .work__grid {
@@ -331,7 +299,7 @@ table, th, td {
     grid-row: auto/auto;
   }
 
-  .contact__grid {
+  .contact__main {
     font-size: 60%;
     line-height: 8px;
   }
@@ -351,15 +319,19 @@ table, th, td {
 
   h1 {
     font-size: 22px;
+  .contact__item {
+    width: 60%;
   }
 
-  .contact__grid {
-    grid-template-columns: 1fr;
-    margin: 5%;
+  .contact__h1 {
+    font-size: 120%;
   }
 
-  .about__grid {
-    font-size: 50%;
+  .contact__link {
+    font-size: 60%;
   }
 }
+  .contact__link {
+    font-size: 40%;
+  }
 }
