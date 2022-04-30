@@ -283,16 +283,11 @@ table, th, td {
 
 /* Responsive rules for different screen sizes */
 
-@media all and (max-width: 750px) {
-  h1 {
-    font-size: 27px;
 @media all and (max-width: 1300px) {
   .greeting {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  li {
-    font-size: 20px;
   #home__img {
     grid-column: 2/3;
     grid-row: 1/3;
