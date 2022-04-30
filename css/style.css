@@ -27,8 +27,8 @@ body {
   font-family: var(--primary-font);
   font-weight: var(--primary-font-weight-regular);
   max-width: 100%;
-  padding: 40px;
   position: relative;
+  padding: 4%;
 }
 
 h1 {
@@ -78,7 +78,7 @@ button:focus,
 
 .left, .right {
   top:0; bottom: 0;
-  width: 20px;
+  width: 2%;
 }
 
 .left {
@@ -91,7 +91,7 @@ button:focus,
 
 .top, .bottom {
   left:0; right: 0;
-  height: 20px;
+  height: 2%;
 }
 
 .top {
