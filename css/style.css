@@ -137,7 +137,6 @@ button:focus,
 
 .greeting {
   display: grid;
-  flex-flow: row wrap;
 }
 
 .greeting__item {
@@ -156,8 +155,6 @@ button:focus,
   grid-row: 1/3;
   justify-self: center;
   align-self: center;
-  margin-left: .67em;
-  margin-right: .67em;
 }
 
 #home__button {
