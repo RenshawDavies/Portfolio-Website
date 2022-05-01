@@ -392,6 +392,8 @@ table, th, td {
 
   #puzzles {
     font-size: 200%;
+  .about__p {
+    font-size: 100%;
   }
 
   }
