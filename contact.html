@@ -1,128 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Contact - Davies Coding Solutions</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact - Emily Davies: Coding, Puzzling, Musicing</title>
 
-        <!-- Favicon -->
-        <link
-            rel="shortcut icon"
-            type="image/png"
-            href="img/Teal.ico"
-            sizes="16x16">
+      <!-- Favicon -->
+      <link
+        rel="shortcut icon"
+        type="image/png"
+        href="img/Teal.ico"
+        sizes="16x16">
 
-        <!-- Primary Font -->
-        <link
-            rel="preconnect"
-            href="https://fonts.googleapis.com">
-        <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;700&display=swap"
-            rel="stylesheet">
+      <!-- Fonts -->
+      <link 
+        rel="preconnect" 
+        href="https://fonts.googleapis.com">
+      <link  
+        rel="preconnect" 
+        href="https://fonts.gstatic.com" 
+        crossorigin>
+      <link 
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap" 
+        rel="stylesheet">
 
-        <!-- Secondary Font -->
-        <link
-            rel="preconnect"
-            href="https://fonts.googleapis.com">
-        <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap"
-            rel="stylesheet">
+      <!-- Normalize -->
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="css/style.css">
 
-        <!-- Normalize -->
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="css/style.production3.css">
-    </head>
-    <body>
+      <!-- Browswer support for fixed positioning -->
+      <!--[if lte IE 6]>
+	      <style>#top, #bottom, #left, #right { display: none; }</style>
+        <![endif]
+      -->
+  </head>
+  <body>
 
-    <!-- Header: logo and main navigation -->
-    <header class="header" >
+    <!-- Body Border -->
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="top"></div>
+    <div class="bottom"></div>
 
-      <!-- Logo here -->
-      <img
-        src="img/dcs_logo.svg"
-        alt="Davies Coding Solutions"
-        class="header__item header__item--logo">
+    <!-- Main Menu -->
+    <nav>
+      <ul role="menubar" class="navigation__list">
+        <li role="presentation" class="navigation__li">
+          <a
+            href="index.html"
+            role="menuitem"
+            class="navigation__list--item">
+            Home
+          </a>
+        </li>
+        <li role="presentation" class="navigation__li">
+          <a
+            href="about.html"
+            role="menuitem"
+            class="navigation__list--item">
+            About
+          </a>
+        </li>
+        <li role="presentation" class="navigation__li">
+          <a
+            href="work.html"
+            role="menuitem"
+            class="navigation__list--item">
+            Portfolio
+          </a>
+        </li>
+        <li role="presentation" class="navigation__li">
+          <a
+            href="contact.html"
+            role="menuitem"
+            class="navigation__list--item__active">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-      <!-- Main Menu -->
-      <nav class="header__item">
-        <ul role="menubar" class="navigation__list">
-          <li role="presentation">
-            <a
-              href="index.html"
-              role="menuitem"
-              class="navigation__list--item">HOME
-            </a>
-          </li>
-          <li role="presentation">
-            <a
-              href="about.html"
-              role="menuitem"
-              class="navigation__list--item">ABOUT
-            </a>
-          </li>
-          <li role="presentation">
-            <a
-              href="work.html"
-              role="menuitem"
-              class="navigation__list--item">PORTFOLIO
-            </a>
-          </li>
-          <li role="presentation">
-            <a
-              href="contact.html"
-              role="menuitem"
-              class="navigation__list--item__active">CONTACT
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header><br><br>
+    <!-- Contact content begins -->
+    <main class="contact__main">
 
-          <!-- Contact content begins, form in notes if needed -->
-          <main id="contact__main" class="content, contact__grid">
+      <!-- Contact Info -->
+      <div id="contact__info" class="contact__item">
 
-             <!-- Contact Info -->
-            <div id="contact__info" class="contact__grid--item">
+        <!-- Call to action -->
+        <h1 class="contact__h1">Say Hey!</h1>
+          <a href="mailto:emilygdavies42@gmail.com" target="_blank" class="contact__link">emilygdavies42@gmail.com</a><br><br>
+          <a href="https://github.com/Scaramouche9" target="_blank" class="contact__link">Github</a><br><br>
+          <a href="https://www.linkedin.com/in/emily-davies9/" target="_blank" class="contact__link">LinkedIn</a>
+      
+      </div>
+    </main>
+        
+    <br>
+    <br>
 
-                <!-- Call to action -->
-                <h2>Say Hey!</h2>
-                <h4>Davies Coding Solutions</h4>
-                <a href="mailto:emilygdavies42@gmail.com" target="_blank">emilygdavies42@gmail.com</a><br><br>
-                <a href="https://github.com/Scaramouche9" target="_blank">Github</a><br><br>
-                <a href="https://www.linkedin.com/in/emily-davies9/" target="_blank">LinkedIn</a>
-            </div>
-        </main>
-        <br>
-        <br>
+    <!-- Footer: links to social media profiles -->
+    <footer class="page-footer">
+      <div>
 
-        <!-- Footer: links to social media profiles -->
-        <footer class="page-footer">
-            <div class="social-media">
+        <!-- Github icon -->
+        <a class="footer__social" href="https://github.com/Scaramouche9" target="_blank">
+          <img src="img/github_icon.svg" alt="github icon">
+        </a>
 
-                <!-- Github icon -->
-                 <a class="footer__social" href="https://github.com/Scaramouche9" target="_blank">
-                    <img src="img/github_icon.svg" alt="github icon">
-                </a>
+        <!-- Linkedin icon -->
+        <a class="footer__social" href="https://www.linkedin.com/in/emily-davies9/" target="_blank">
+          <img src="img/linkedin_icon.svg" alt="linkedin icon">
+        </a>
+      </div>
+    </footer>
 
-                <!-- Linkedin icon -->
-                <a class="footer__social" href="https://www.linkedin.com/in/emily-davies9/" target="_blank">
-                    <img src="img/linkedin_icon.svg" alt="linkedin icon">
-                </a>
-            </div>
-        </footer>
-        <!-- accessibility checklist -->
-        <script src="js/tota11y.min.js"></script>
-    </body>
+    <!-- Accessibility checklist -->
+    <script src="js/tota11y.min.js"></script>
+    
+  </body>
 </html>
