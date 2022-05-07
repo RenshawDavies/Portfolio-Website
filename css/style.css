@@ -153,6 +153,7 @@ button:focus,
   border-radius: 50%;
   padding: 2%;
   width: 30vw;
+  height: auto;
 }
 
 #home__h1 {
@@ -243,8 +244,6 @@ table, th, td {
 
 /* CONTACT */
 #contact__info {
-  font-size: 2em;
-  line-height: 7mm;
   font-family: var(--primary-font);
   text-align: center;
 }
@@ -360,6 +359,19 @@ table, th, td {
   }
 }
 
+@media screen and (orientation: portrait) {
+
+  .contact__main {
     height: 50vh;
+    position: relative;
+  }
+
+  #contact__info {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
