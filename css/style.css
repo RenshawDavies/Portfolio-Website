@@ -321,6 +321,8 @@ table, th, td {
   }
 
   #about__main {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   #about__main--text {
