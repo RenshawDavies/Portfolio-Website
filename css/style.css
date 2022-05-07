@@ -115,7 +115,7 @@ button:focus,
 .navigation__li {
   width: 100%;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 3vw;
   display: flex;
   justify-content: center;
 }
@@ -148,6 +148,7 @@ button:focus,
   grid-column: 1/2;
   grid-row: 1/4;
   padding: 2%;
+  width: 30vw;
 }
 
 #home__h1 {
@@ -162,6 +163,7 @@ button:focus,
   grid-row: 3/4;
   justify-self: center;
   align-self: center;
+  font-size: 3vw;
 }
 
 /* ABOUT */
@@ -169,6 +171,7 @@ button:focus,
 .about__h1 {
   color: var(--primary-color-lighter);
   text-align: center;
+  font-size: 3vw;
 }
 
 .about__h2 {
@@ -177,7 +180,11 @@ button:focus,
 }
 
 #puzzles {
-  font-size: 300%;
+  font-size: 4vw;
+}
+
+.about__p {
+  font-size: 2vw;
 }
 
 #about__main {
@@ -187,9 +194,13 @@ button:focus,
 }
 
 #about__main--text {
-  line-height: 25px;
+  line-height: 5vh;
   width: 100%;
   text-align: center;
+}
+
+table {
+  font-size: 2vw;
 }
 
 table, th, td {
@@ -263,6 +274,14 @@ table, th, td {
     width: 50%;
   }
 
+  .contact__h1 {
+    font-size: 5vw;
+  }
+
+  .contact__link {
+    font-size: 2vw;
+  }
+
 /* FOOTER */
 .page-footer {
   clear: both;
@@ -305,48 +324,10 @@ table, th, td {
     grid-row: 4/5;
   }
 
-  .about__h1 {
-    font-size: 130%;
+  #about__main--text {
+    line-height: 3vh;
   }
 
-  .about__h2 {
-    font-size: 130%;
-  }
-}
-
-@media all and (max-width: 950px) {
-  #home__h1 {
-    font-size: 80%;
-  }
-
-  .contact__link {
-    font-size: 80%;
-  }
-}
-
-@media all and (max-width: 600px) {
-
-  .navigation__list--item,
-  .navigation__list--item__active {
-    font-size: 80%;
-  }
-
-  .about__h1 {
-    font-size: 100%;
-  }
-
-  .about__h2 {
-    font-size: 100%;
-  }
-
-  #puzzles {
-    font-size: 170%;
-  }
-
-  li {
-    font-size: 20px;
-  }
-  
   .work__grid {
     grid-template-columns: 1fr;
     grid-gap: 15px;
@@ -362,7 +343,6 @@ table, th, td {
   }
 
   .contact__main {
-    font-size: 60%;
     line-height: 8px;
   }
 }
@@ -373,34 +353,24 @@ table, th, td {
     width: 0px;
   }
 
-  .navigation__list--item,
-  .navigation__list--item__active {
-    font-size: 60%;
-  }
-
-  h1 {
-    font-size: 60%;
-  }
-
-  #home__h1 {
-    font-size: 60%;
   }
 
   #about__main {
-    font-size: 50%;
+  }
+
+  #about__main--text {
+    line-height: 2vh;
   }
 
   .about__p {
-    font-size: 100%;
-  }
-
-  #puzzles {
-    font-size: 200%;
+    font-size: 2.5vw;
   }
 
   .work__grid {
     grid-template-columns: 1fr;
     grid-gap: 10px;
+  table {
+    font-size: 2.5vw;
   }
 
   .contact__item {
@@ -418,20 +388,17 @@ table, th, td {
 
 @media all and (max-width: 300px) {
 
-  .navigation__list--item,
-  .navigation__list--item__active {
-    font-size: 40%;
-  }
-
-  h1 {
-    font-size: 40%;
-  }
-
   li {
     font-size: 40%;
   }
 
+  }
+
   .contact__link {
     font-size: 40%;
+  }
+}
+
+    height: 50vh;
   }
 }
