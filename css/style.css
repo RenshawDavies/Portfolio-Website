@@ -239,11 +239,6 @@ table, th, td {
     padding: 15%;
     line-height: 22px;
   }
-
-  .work__grid--item:last-child {
-    grid-column: 3/3;
-    grid-row: 1/3;
-  }
 }
 
 /* CONTACT */
@@ -306,21 +301,12 @@ table, th, td {
 
   .work__grid {
     grid-template-columns: 1fr;
-    grid-gap: 15px;
   }
 
   .work__grid--item {
     padding: 10%;
   }
 
-  .work__grid--item:last-child {
-    grid-column: auto/auto;
-    grid-row: auto/auto;
-  }
-
-  .contact__main {
-    line-height: 8px;
-  }
 }
 
 @media all and (max-width: 450px) {
@@ -342,9 +328,6 @@ table, th, td {
     font-size: 2.5vw;
   }
 
-  .work__grid {
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
   table {
     font-size: 2.5vw;
   }
@@ -368,6 +351,8 @@ table, th, td {
     font-size: 40%;
   }
 
+  .work__grid--item {
+    padding: 15%;
   }
 
   .contact__link {
