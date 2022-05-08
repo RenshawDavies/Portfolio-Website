@@ -18,7 +18,7 @@ Future plans:
 This project in particular is ever growing. In order of priority, I intend to:
 1. Optimize accessibility to meet <a href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a> standards
 2. Add light, dark, and contrast modes for greater accessibility and customization
-3. Make <a href="about.html">about</a> section more interactive, adding links to relevant content
+3. Make <a href="https://scaramouche9.github.io/Portfolio-Website/about.html">about</a> section more interactive, adding links to relevant content
 4. Add more projects!
 
 ## Usage <a name = "usage"></a>
