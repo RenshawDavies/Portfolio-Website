@@ -115,7 +115,7 @@ button:focus,
 .navigation__li {
   width: 100%;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 3vw;
   display: flex;
   justify-content: center;
 }
@@ -136,7 +136,13 @@ button:focus,
 }
 
 .greeting {
-  display: grid;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .greeting__item {
@@ -145,23 +151,13 @@ button:focus,
 
 #home__img {
   border-radius: 50%;
-  grid-column: 1/2;
-  grid-row: 1/4;
   padding: 2%;
+  width: 30vw;
+  height: auto;
 }
 
 #home__h1 {
-  grid-column: 2/4;
-  grid-row: 1/3;
-  justify-self: center;
-  align-self: center;
-}
-
-#home__button {
-  grid-column: 2/4;
-  grid-row: 3/4;
-  justify-self: center;
-  align-self: center;
+  font-size: 3vw;
 }
 
 /* ABOUT */
@@ -169,6 +165,7 @@ button:focus,
 .about__h1 {
   color: var(--primary-color-lighter);
   text-align: center;
+  font-size: 3vw;
 }
 
 .about__h2 {
@@ -177,7 +174,11 @@ button:focus,
 }
 
 #puzzles {
-  font-size: 300%;
+  font-size: 4vw;
+}
+
+.about__p {
+  font-size: 2vw;
 }
 
 #about__main {
@@ -187,9 +188,13 @@ button:focus,
 }
 
 #about__main--text {
-  line-height: 25px;
+  line-height: 5vh;
   width: 100%;
   text-align: center;
+}
+
+table {
+  font-size: 2vw;
 }
 
 table, th, td {
@@ -235,17 +240,10 @@ table, th, td {
     padding: 15%;
     line-height: 22px;
   }
-
-  .work__grid--item:last-child {
-    grid-column: 3/3;
-    grid-row: 1/3;
-  }
 }
 
 /* CONTACT */
 #contact__info {
-  font-size: 2em;
-  line-height: 7mm;
   font-family: var(--primary-font);
   text-align: center;
 }
@@ -261,6 +259,14 @@ table, th, td {
     margin: auto;
     margin-top: 5%;
     width: 50%;
+  }
+
+  .contact__h1 {
+    font-size: 5vw;
+  }
+
+  .contact__link {
+    font-size: 2vw;
   }
 
 /* FOOTER */
@@ -283,88 +289,24 @@ table, th, td {
 
 /* Responsive rules for different screen sizes */
 
-@media all and (max-width: 1300px) {
-  .greeting {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  #home__img {
-    grid-column: 2/3;
-    grid-row: 1/3;
-    padding: 2%;
-    justify-self: center;
-  }
-  
-  #home__h1 {
-    grid-column: 1/4;
-    grid-row: 3/4;
-  }
-  
-  #home__button {
-    grid-column: 2/3;
-    grid-row: 4/5;
-  }
-
-  .about__h1 {
-    font-size: 130%;
-  }
-
-  .about__h2 {
-    font-size: 130%;
-  }
-}
-
 @media all and (max-width: 950px) {
-  #home__h1 {
-    font-size: 80%;
-  }
-
-  .contact__link {
-    font-size: 80%;
-  }
-}
-
-@media all and (max-width: 600px) {
-
-  .navigation__list--item,
-  .navigation__list--item__active {
-    font-size: 80%;
-  }
-
-  .about__h1 {
-    font-size: 100%;
-  }
-
-  .about__h2 {
-    font-size: 100%;
-  }
-
-  #puzzles {
-    font-size: 170%;
-  }
-
-  li {
-    font-size: 20px;
+  #home__img {
+    width: 50vw;
+    height: auto;
   }
   
+  #about__main--text {
+    line-height: 3vh;
+  }
+
   .work__grid {
     grid-template-columns: 1fr;
-    grid-gap: 15px;
   }
 
   .work__grid--item {
     padding: 10%;
   }
 
-  .work__grid--item:last-child {
-    grid-column: auto/auto;
-    grid-row: auto/auto;
-  }
-
-  .contact__main {
-    font-size: 60%;
-    line-height: 8px;
-  }
 }
 
 @media all and (max-width: 450px) {
@@ -373,32 +315,26 @@ table, th, td {
     width: 0px;
   }
 
-  .navigation__list--item,
-  .navigation__list--item__active {
-    font-size: 60%;
-  }
-
-  h1 {
-    font-size: 60%;
+  #home__img {
+    width: 75vw;
+    height: auto;
   }
 
   #about__main {
-    font-size: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
-  #puzzles {
-    font-size: 200%;
+  #about__main--text {
+    line-height: 2vh;
   }
 
-  li {
-    font-size: 60%;
-    line-height: 12px;
-    border-width: 2px;
+  .about__p {
+    font-size: 2.5vw;
   }
 
-  .work__grid {
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
+  table {
+    font-size: 2.5vw;
   }
 
   .contact__item {
@@ -414,23 +350,34 @@ table, th, td {
   }
 }
 
-
 @media all and (max-width: 300px) {
-
-  .navigation__list--item,
-  .navigation__list--item__active {
-    font-size: 40%;
-  }
-
-  h1 {
-    font-size: 40%;
-  }
 
   li {
     font-size: 40%;
   }
 
+  .work__grid--item {
+    padding: 15%;
+  }
+
   .contact__link {
     font-size: 40%;
+  }
+}
+
+@media screen and (orientation: portrait) {
+
+  .contact__main {
+    height: 50vh;
+    position: relative;
+  }
+
+  #contact__info {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
