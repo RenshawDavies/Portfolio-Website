@@ -303,10 +303,17 @@ th {
 
 /* Responsive rules for different screen sizes */
 
+@media all and (max-width: 1300px) {
+  #home__img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 @media all and (max-width: 950px) {
   #home__img {
-    width: 50vw;
-    height: auto;
+    width: 400px;
+    height: 400px;
   }
   
   #about__main--text {
@@ -323,6 +330,13 @@ th {
 
 }
 
+@media all and (max-width: 600px) {
+  #home__img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
 @media all and (max-width: 450px) {
 
   .top, .bottom, .left, .right {
@@ -330,7 +344,7 @@ th {
   }
 
   #home__img {
-    width: 75vw;
+    width: 200px;
     height: auto;
   }
 
