@@ -7,8 +7,11 @@
   --primary-color-darker: #002020;
   --secondary-color-darker: #5ee5e5;
   --primary-font: 'Josefin Sans', sans-serif;
-  --primary-font-weight-regular: 200;
-  --primary-font-weight-bold: 400;
+  --primary-weight-thin: 200;
+  --primary-weight-bold: 400;
+  --secondary-font: 'Quicksand', sans-serif;
+  --secondary-weight-thin: 400;
+  --secondary-weight-bold: 600;
 }
 
 /* Accounts for border and padding in content dimensions */
@@ -25,14 +28,14 @@ body {
   background-color: var(--primary-color-darker);
   color: var(--primary-color-lighter);
   font-family: var(--primary-font);
-  font-weight: var(--primary-font-weight-regular);
+  font-weight: var(--primary-weight-thin);
   max-width: 100%;
   position: relative;
   padding: 4%;
 }
 
 h1 {
-  font-weight: var(--primary-font-weight-bold);
+  font-weight: var(--primary-weight-bold);
 }
 
 a {
@@ -57,6 +60,8 @@ button,
   border-bottom: 2px solid var(--primary-color);
   border-right: 2px solid var(--primary-color);
   font-family: var(--primary-font);
+  font-weight: var(--primary-weight-bold);
+  font-size: 2vw;
   transition: 0.2s opacity;
 }
 
@@ -114,7 +119,7 @@ button:focus,
 
 .navigation__li {
   width: 100%;
-  font-weight: 700;
+  font-weight: var(--primary-weight-bold);
   font-size: 3vw;
   display: flex;
   justify-content: center;
@@ -152,8 +157,8 @@ button:focus,
 #home__img {
   border-radius: 50%;
   padding: 2%;
-  width: 30vw;
-  height: auto;
+  width: 530px;
+  height: 530px;
 }
 
 #home__h1 {
@@ -161,25 +166,6 @@ button:focus,
 }
 
 /* ABOUT */
-
-.about__h1 {
-  color: var(--primary-color-lighter);
-  text-align: center;
-  font-size: 3vw;
-}
-
-.about__h2 {
-  color: var(--primary-color-lighter);
-  text-align: center;
-}
-
-#puzzles {
-  font-size: 4vw;
-}
-
-.about__p {
-  font-size: 2vw;
-}
 
 #about__main {
   margin-left: 10%;
@@ -191,6 +177,28 @@ button:focus,
   line-height: 5vh;
   width: 100%;
   text-align: center;
+  font-family: var(--secondary-font);
+}
+
+.about__h1 {
+  color: var(--primary-color-lighter);
+  text-align: center;
+  font-size: 3vw;
+}
+
+.about__h2 {
+  color: var(--primary-color-lighter);
+  text-align: center;
+  font-weight: var(--secondary-weight-bold);
+}
+
+#puzzles {
+  font-size: 4vw;
+}
+
+.about__p {
+  font-size: 2vw;
+  font-weight: var(--secondary-weight-thin);
 }
 
 table {
@@ -203,12 +211,17 @@ table, th, td {
   padding: 1%;
 }
 
+th {
+  font-weight: var(--secondary-weight-bold);
+}
+
 #resume-container {
   text-align: center;
 }
 
 #resume-button {
   display: inline-block;
+
 }
 
 /* PORTFOLIO */
@@ -240,6 +253,7 @@ table, th, td {
     padding: 15%;
     line-height: 22px;
   }
+
 }
 
 /* CONTACT */
