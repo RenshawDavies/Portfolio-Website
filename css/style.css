@@ -55,14 +55,14 @@ button,
   background-color: var(--primary-color-lighter);
   color: var(--primary-color-darker);
   text-decoration: none;
-  padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid var(--primary-color);
   border-right: 2px solid var(--primary-color);
   font-family: var(--primary-font);
   font-weight: var(--primary-weight-bold);
-  font-size: 2vw;
+  font-size: 5vw;
   transition: 0.2s opacity;
+  padding: 4%;
 }
 
 button:hover,
@@ -120,7 +120,7 @@ button:focus,
 .navigation__li {
   width: 100%;
   font-weight: var(--primary-weight-bold);
-  font-size: 3vw;
+  font-size: 4vw;
   display: flex;
   justify-content: center;
 }
@@ -150,10 +150,6 @@ button:focus,
   justify-content: center;
 }
 
-.greeting__item {
-  padding: 2%;
-}
-
 #home__img {
   border-radius: 50%;
   padding: 2%;
@@ -162,7 +158,9 @@ button:focus,
 }
 
 #home__h1 {
-  font-size: 3vw;
+  font-size: 6vw;
+  text-align: center;
+  line-height: 15vh;
 }
 
 /* ABOUT */
@@ -174,7 +172,6 @@ button:focus,
 }
 
 #about__main--text {
-  line-height: 5vh;
   width: 100%;
   text-align: center;
   font-family: var(--secondary-font);
@@ -183,7 +180,7 @@ button:focus,
 .about__h1 {
   color: var(--primary-color-lighter);
   text-align: center;
-  font-size: 3vw;
+  font-size: 4vw;
 }
 
 .about__h2 {
@@ -193,12 +190,13 @@ button:focus,
 }
 
 #puzzles {
-  font-size: 4vw;
+  font-size: 7vw;
 }
 
 .about__p {
   font-size: 2vw;
   font-weight: var(--secondary-weight-thin);
+  line-height: 8vh;
 }
 
 table {
@@ -251,7 +249,12 @@ th {
     border-color: var(--secondary-color);
     border-radius: 20%;
     padding: 15%;
-    line-height: 22px;
+    font-size: 4vh;
+    line-height: 5vh;
+  }
+
+  .work__grid--link {
+    line-height: 10vh;
   }
 
 }
@@ -394,6 +397,24 @@ th {
 }
 
 @media screen and (orientation: portrait) {
+
+  #home__h1 {
+    line-height: 6vh;
+  }
+
+  .about__h1 {
+    line-height: 5vh;
+  }
+
+  .about__p {
+    font-size: 4vw;
+    line-height: 5vh;
+  }
+
+  table {
+    font-size: 4vw;
+    line-height: 5vh;
+  }
 
   .contact__main {
     height: 50vh;
