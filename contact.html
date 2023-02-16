@@ -1,126 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Contact Emily about Coding">
-    <meta name="keywords" content="HTML,CSS,JavaScript,Bootstrap">
-    <meta name="author" content="Emily Davies">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact - Emily Davies: Coding, Puzzling, Musicing</title>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Contact Emily about Coding" />
+		<meta name="keywords" content="HTML,CSS,JavaScript,Bootstrap" />
+		<meta name="author" content="Emily Davies" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Contact - Emily Davies: Coding, Puzzling, Musicing</title>
 
-      <!-- Favicon -->
-      <link
-        rel="shortcut icon"
-        type="image/png"
-        href="img/Teal.ico"
-        sizes="16x16">
+		<!-- Favicon -->
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			href="img/Teal.ico"
+			sizes="16x16"
+		/>
 
-      <!-- Fonts -->
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap');
-      </style>
+		<!-- Fonts -->
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap');
+		</style>
 
-      <!-- FontAwesome Icons -->
-      <script src="https://kit.fontawesome.com/3c4a3e3eff.js" crossorigin="anonymous"></script>
+		<!-- FontAwesome Icons -->
+		<script
+			src="https://kit.fontawesome.com/3c4a3e3eff.js"
+			crossorigin="anonymous"
+		></script>
 
-      <!-- Normalize -->
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="css/style.css">
+		<!-- Normalize -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 
-      <!-- Browswer support for fixed positioning -->
-      <!--[if lte IE 6]>
+		<!-- Browswer support for fixed positioning -->
+		<!--[if lte IE 6]>
 	      <style>#top, #bottom, #left, #right { display: none; }</style>
         <![endif]
       -->
-  </head>
-  <body>
+	</head>
+	<body>
+		<!-- Body Border -->
+		<div class="left"></div>
+		<div class="right"></div>
+		<div class="top"></div>
+		<div class="bottom"></div>
 
-    <!-- Body Border -->
-    <div class="left"></div>
-    <div class="right"></div>
-    <div class="top"></div>
-    <div class="bottom"></div>
+		<!-- Main Menu -->
+		<nav>
+			<ul role="menubar" class="navigation__list">
+				<li role="presentation" class="navigation__li">
+					<a href="index.html" role="menuitem" class="navigation__list--item">
+						<i class="fa-solid fa-house-chimney" title="house icon"></i>
+						Home
+					</a>
+				</li>
+				<li role="presentation" class="navigation__li">
+					<a href="about.html" role="menuitem" class="navigation__list--item">
+						<i class="fa-solid fa-puzzle-piece" title="puzzle piece icon"></i>
+						About
+					</a>
+				</li>
+				<li role="presentation" class="navigation__li">
+					<a href="work.html" role="menuitem" class="navigation__list--item">
+						<i class="fa-solid fa-code" title="angle bracket icon"></i>
+						Portfolio
+					</a>
+				</li>
+				<li role="presentation" class="navigation__li">
+					<a
+						href="contact.html"
+						role="menuitem"
+						class="navigation__list--item__active"
+					>
+						<i class="fa-solid fa-at" title="'at' icon"></i>
+						Contact
+					</a>
+				</li>
+			</ul>
+		</nav>
 
-    <!-- Main Menu -->
-    <nav>
-      <ul role="menubar" class="navigation__list">
-        <li role="presentation" class="navigation__li">
-          <a
-            href="index.html"
-            role="menuitem"
-            class="navigation__list--item">
-            <i class="fa-solid fa-house-chimney" alt="house icon"></i>
-            Home
-          </a>
-        </li>
-        <li role="presentation" class="navigation__li">
-          <a
-            href="about.html"
-            role="menuitem"
-            class="navigation__list--item">
-            <i class="fa-solid fa-puzzle-piece" alt="puzzle piece icon"></i>
-            About
-          </a>
-        </li>
-        <li role="presentation" class="navigation__li">
-          <a
-            href="work.html"
-            role="menuitem"
-            class="navigation__list--item">
-            <i class="fa-solid fa-code" alt="angle bracket icon"></i>
-            Portfolio
-          </a>
-        </li>
-        <li role="presentation" class="navigation__li">
-          <a
-            href="contact.html"
-            role="menuitem"
-            class="navigation__list--item__active">
-            <i class="fa-solid fa-at" alt="'at' icon"></i>
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
+		<!-- Contact content begins -->
+		<main class="contact__main">
+			<!-- Contact Info -->
+			<div id="contact__info" class="contact__item">
+				<!-- Call to action -->
+				<h1 class="contact__h1">Say Hey!</h1>
+				<a
+					href="mailto:emilygdavies42@gmail.com"
+					target="_blank"
+					class="contact__link"
+					>emilygdavies42@gmail.com</a
+				><br /><br />
+				<a
+					href="https://github.com/Scaramouche9"
+					target="_blank"
+					class="contact__link"
+					>Github</a
+				><br /><br />
+				<a
+					href="https://www.linkedin.com/in/emily-davies9/"
+					target="_blank"
+					class="contact__link"
+					>LinkedIn</a
+				>
+			</div>
+		</main>
 
-    <!-- Contact content begins -->
-    <main class="contact__main">
+		<br />
+		<br />
 
-      <!-- Contact Info -->
-      <div id="contact__info" class="contact__item">
+		<!-- Footer: links to social media profiles -->
+		<footer class="page-footer">
+			<div>
+				<!-- Github icon -->
+				<a
+					class="footer__social"
+					href="https://github.com/Scaramouche9"
+					target="_blank"
+				>
+					<img
+						src="img/github_icon.svg"
+						title="github icon"
+						width="40"
+						height="40"
+					/>
+				</a>
 
-        <!-- Call to action -->
-        <h1 class="contact__h1">Say Hey!</h1>
-          <a href="mailto:emilygdavies42@gmail.com" target="_blank" class="contact__link">emilygdavies42@gmail.com</a><br><br>
-          <a href="https://github.com/Scaramouche9" target="_blank" class="contact__link">Github</a><br><br>
-          <a href="https://www.linkedin.com/in/emily-davies9/" target="_blank" class="contact__link">LinkedIn</a>
-      
-      </div>
-    </main>
-        
-    <br>
-    <br>
-
-    <!-- Footer: links to social media profiles -->
-    <footer class="page-footer">
-      <div>
-
-        <!-- Github icon -->
-        <a class="footer__social" href="https://github.com/Scaramouche9" target="_blank">
-          <img src="img/github_icon.svg" alt="github icon" width="40px" height="40px">
-        </a>
-
-        <!-- Linkedin icon -->
-        <a class="footer__social" href="https://www.linkedin.com/in/emily-davies9/" target="_blank">
-          <img src="img/linkedin_icon.svg" alt="linkedin icon" width="40px" height="40px">
-        </a>
-      </div>
-    </footer>
-  </body>
+				<!-- Linkedin icon -->
+				<a
+					class="footer__social"
+					href="https://www.linkedin.com/in/emily-davies9/"
+					target="_blank"
+				>
+					<img
+						src="img/linkedin_icon.svg"
+						title="linkedin icon"
+						width="40"
+						height="40"
+					/>
+				</a>
+			</div>
+		</footer>
+	</body>
 </html>

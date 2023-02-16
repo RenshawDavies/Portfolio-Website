@@ -1,174 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="How Emily started coding">
-    <meta name="keywords" content="HTML,CSS,JavaScript,Bootstrap">
-    <meta name="author" content="Emily Davies">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About - Emily Davies: Coding, Puzzling, Musicing</title>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="How Emily started coding" />
+		<meta name="keywords" content="HTML,CSS,JavaScript,Bootstrap" />
+		<meta name="author" content="Emily Davies" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>About - Emily Davies: Coding, Puzzling, Musicing</title>
 
-    <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="img/Teal.ico"
-      sizes="16x16">
+		<!-- Favicon -->
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			href="img/Teal.ico"
+			sizes="16x16"
+		/>
 
-    <!-- Fonts -->
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&family=Quicksand:wght@400;600&display=swap');
-    </style>
+		<!-- Fonts -->
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&family=Quicksand:wght@400;600&display=swap');
+		</style>
 
-    <!-- FontAwesome Icons -->
-    <script src="https://kit.fontawesome.com/3c4a3e3eff.js" crossorigin="anonymous"></script>
+		<!-- FontAwesome Icons -->
+		<script
+			src="https://kit.fontawesome.com/3c4a3e3eff.js"
+			crossorigin="anonymous"
+		></script>
 
-    <!-- Normalize -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="css/style.css">
+		<!-- Normalize -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <!-- Browswer support for fixed positioning -->
-    <!--[if lte IE 6]>
+		<!-- Browswer support for fixed positioning -->
+		<!--[if lte IE 6]>
 	    <style>#top, #bottom, #left, #right { display: none; }</style>
       <![endif]
     -->
-  </head>
-  <body>
+	</head>
+	<body>
+		<!-- Body Border -->
+		<div class="left"></div>
+		<div class="right"></div>
+		<div class="top"></div>
+		<div class="bottom"></div>
 
-    <!-- Body Border -->
-    <div class="left"></div>
-    <div class="right"></div>
-    <div class="top"></div>
-    <div class="bottom"></div>
+		<!-- Main Menu -->
+		<nav>
+			<ul role="menubar" class="navigation__list">
+				<li role="presentation" class="navigation__li">
+					<a href="index.html" role="menuitem" class="navigation__list--item">
+						<i class="fa-solid fa-house-chimney" title="house icon"></i>
+						Home
+					</a>
+				</li>
+				<li role="presentation" class="navigation__li">
+					<a
+						href="about.html"
+						role="menuitem"
+						class="navigation__list--item__active"
+					>
+						<i class="fa-solid fa-puzzle-piece" title="puzzle piece icon"></i>
+						About
+					</a>
+				</li>
+				<li role="presentation" class="navigation__li">
+					<a href="work.html" role="menuitem" class="navigation__list--item">
+						<i class="fa-solid fa-code" title="angle bracket icon"></i>
+						Portfolio
+					</a>
+				</li>
+				<li role="presentation" class="navigation__li">
+					<a href="contact.html" role="menuitem" class="navigation__list--item">
+						<i class="fa-solid fa-at" title="'at' icon"></i>
+						Contact
+					</a>
+				</li>
+			</ul>
+		</nav>
 
-    <!-- Main Menu -->
-    <nav>
-      <ul role="menubar" class="navigation__list">
-        <li role="presentation" class="navigation__li">
-          <a
-            href="index.html"
-            role="menuitem"
-            class="navigation__list--item">
-            <i class="fa-solid fa-house-chimney" alt="house icon"></i>
-            Home
-          </a>
-        </li>
-        <li role="presentation" class="navigation__li">
-          <a
-            href="about.html"
-            role="menuitem"
-            class="navigation__list--item__active">
-            <i class="fa-solid fa-puzzle-piece" alt="puzzle piece icon"></i>
-            About
-          </a>
-        </li>
-        <li role="presentation" class="navigation__li">
-          <a
-            href="work.html"
-            role="menuitem"
-            class="navigation__list--item">
-            <i class="fa-solid fa-code" alt="angle bracket icon"></i>
-            Portfolio
-          </a>
-        </li>
-        <li role="presentation" class="navigation__li">
-          <a
-            href="contact.html"
-            role="menuitem"
-            class="navigation__list--item">
-            <i class="fa-solid fa-at" alt="'at' icon"></i>
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
+		<!-- About content begins -->
+		<main id="about__main">
+			<!-- Main about text -->
+			<div id="about__main--text">
+				<h1 class="about__h1">
+					What do playing music, planning tours, and writing code have in
+					common?
+				</h1>
 
-    <!-- About content begins -->
-    <main id="about__main">
-    
-      <!-- Main about text -->
-      <div id="about__main--text">
-        <h1 class="about__h1" >What do playing music, planning tours, and writing code have in common?</h1>
+				<h2 class="about__h2" id="puzzles">They're all PUZZLES!</h2>
 
-        <h2 class="about__h2" id="puzzles">They're all PUZZLES!</h2>
+				<p class="about__p">
+					<em>I love puzzles.</em>
+				</p>
 
-        <p class="about__p"><em>I love puzzles.</em> From a young age, I'd pour over Happy Cubes, Nonograms, and grid logic, still thinking about their patterns as I drifted off to sleep.</p>
+				<p class="about__p">
+					From a young age, I'd pour over Happy Cubes, Nonograms, and grid
+					logic, still thinking about their patterns as I drifted off to sleep.
+				</p>
 
-        <p class="about__p">Around the same time, I fell in love with music. I'd follow this passion along a more linear path.</p>
+				<p class="about__p">
+					Around the same time, I fell in love with music. I'd follow this
+					passion along a more linear path.
+				</p>
 
-        <p class="about__p">Fast forward about 15 years, I'm recording albums with my band in New Orleans.</p>
+				<p class="about__p">
+					Fast forward about 15 years, I'm recording albums with my band in New
+					Orleans.
+				</p>
 
-        <p class="about__p">The band began acoustic and transitioned to full on synth pop. I taught myself to use synths, MIDI, DAWs, etc in a few months before going live with the new sound.</p>
+				<p class="about__p">
+					The band began acoustic and transitioned to full on synth pop...
+				</p>
 
-        <p class="about__p">We toured the US and Canada. I planned routes, booked shows, lined up bands to play with us, and secured lodging.</p>
-                
-        <p class="about__p">Through building a Wix website for the band, working for a software company, and taking stock of my priorities, I finally realized coding is one big puzzle— a total dream job.</p>
-                
-        <p class="about__p">I began teaching myself, using the wealth of online resources available.</p>
+				<p class="about__p">
+					I taught myself to use synths, MIDI, DAWs, etc in a few months before
+					going live with the new sound.
+				</p>
 
-        <br>
+				<p class="about__p">
+					We toured the US and Canada. I planned routes, booked shows, lined up
+					bands to play with us, and secured lodging.
+				</p>
 
-        <hr>
+				<p class="about__p">
+					Through designing a Wix website for the band, working for a software
+					company, and taking stock of my priorities, I finally realized coding
+					is one big puzzle— a total dream job.
+				</p>
 
-        <br>
-                
-        <h1 class="about__h1" >I enjoy building websites, writing databases, and determining then learning the tools to accomplish my goals.</h1>
-          
-        <h1 class="about__h1">Some favorite tools I've used are:</h1>
+				<p class="about__p">
+					I began teaching myself, using the wealth of online resources
+					available...
+				</p>
 
-        <table>
-          <tr>
-            <th>Tool</th>
-            <th>Project</th>
-          </tr>
-          <tr>
-            <td>CSS Grid and Flexbox</td>
-            <td>I used grid to display my work on the <a href="work.html">portfolio page</a>  of this website. I used flexbox to create the navbar and position my social media icons.</td>
-          </tr>
-          <tr>
-            <td>JavaScript</td>
-            <td>I created an animation of a camel, my favorite animal, using basic shapes.</td>
-          </tr>
-          <tr>
-            <td>PostgreSQL</td>
-            <td>I got a taste of PostgreSQL when creating a database of Nicolas Cage movies, a work in progress. I look forward to using it more.</td>
-          </tr>
-        </table>
+				<hr />
 
-        <br>
-        <br>
-      
-        <!-- Resume -->
-        <div id="resume-container">
-          <a href="docs/resume.pdf" class="button" id="resume-button" download>Download my Resume</a>
-        </div>
-      
-        <br>
-        <br>
+				<h1 class="about__h1">
+					I enjoy building websites, writing databases, and determining then
+					learning to use the tools to accomplish my goals.
+				</h1>
 
-      </div>
-    </main>
+				<h1 class="about__h1">Some favorite tools I've used are:</h1>
 
-    <!-- Footer: links to social media profiles -->
-    <footer class="page-footer">
-      <div>
+				<table>
+					<tr>
+						<th>Tool</th>
+						<th>Project</th>
+					</tr>
+					<tr>
+						<td>CSS Grid and Flexbox</td>
+						<td>
+							I love seeing my code become vibrant by customizing with my own
+							CSS. I used grid to display my work on the
+							<a href="work.html">portfolio page</a> of this website. I used
+							flexbox to create the navbar and position my social media icons.
+						</td>
+					</tr>
+					<tr>
+						<td>JavaScript</td>
+						<td>
+							I created an animation of a camel, my favorite animal, using basic
+							shapes.
+						</td>
+					</tr>
+					<tr>
+						<td>SQL</td>
+						<td>
+							I used MySQLWorkbench to build the databases for an app that can
+							help a movie theatre manage its ticket sales online.
+						</td>
+					</tr>
+				</table>
 
-        <!-- Github icon -->
-        <a class="footer__social" href="https://github.com/Scaramouche9" target="_blank">
-          <img src="img/github_icon.svg" alt="github icon" width="40px" height="40px">
-        </a>
+				<br />
+				<br />
 
-        <!-- Linkedin icon -->
-        <a class="footer__social" href="https://www.linkedin.com/in/emily-davies9/" target="_blank">
-          <img src="img/linkedin_icon.svg" alt="linkedin icon" width="40px" height="40px">
-        </a>
-      </div>
-    </footer>   
-  </body>
+				<!-- Resume -->
+				<div id="resume-container">
+					<a href="docs/resume.pdf" class="button" id="resume-button" download
+						>Download my Resume</a
+					>
+				</div>
+
+				<br />
+				<br />
+			</div>
+		</main>
+
+		<!-- Footer: links to social media profiles -->
+		<footer class="page-footer">
+			<div>
+				<!-- Github icon -->
+				<a
+					class="footer__social"
+					href="https://github.com/Scaramouche9"
+					target="_blank"
+				>
+					<img
+						src="img/github_icon.svg"
+						title="github icon"
+						width="40"
+						height="40"
+					/>
+				</a>
+
+				<!-- Linkedin icon -->
+				<a
+					class="footer__social"
+					href="https://www.linkedin.com/in/emily-davies9/"
+					target="_blank"
+				>
+					<img
+						src="img/linkedin_icon.svg"
+						title="linkedin icon"
+						width="40"
+						height="40"
+					/>
+				</a>
+			</div>
+		</footer>
+	</body>
 </html>
