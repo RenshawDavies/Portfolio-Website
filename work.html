@@ -1,150 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Work - Emily Davies: Coding, Puzzling, Musicing</title>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Work - Emily Davies: Coding, Puzzling, Musicing</title>
 
-      <!-- Favicon -->
-      <link
-        rel="shortcut icon"
-        type="image/png"
-        href="img/Teal.ico"
-        sizes="16x16">
+		<!-- Favicon -->
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			href="img/Teal.ico"
+			sizes="16x16"
+		/>
 
-      <!-- Fonts -->
-      <link 
-        rel="preconnect" 
-        href="https://fonts.googleapis.com">
-      <link  
-        rel="preconnect" 
-        href="https://fonts.gstatic.com" 
-        crossorigin>
-      <link 
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap" 
-        rel="stylesheet">
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap"
+			rel="stylesheet"
+		/>
 
-      <!-- FontAwesome Icons -->
-      <script src="https://kit.fontawesome.com/3c4a3e3eff.js" crossorigin="anonymous"></script>
+		<!-- FontAwesome Icons -->
+		<script
+			src="https://kit.fontawesome.com/3c4a3e3eff.js"
+			crossorigin="anonymous"
+		></script>
 
-      <!-- Normalize -->
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="css/style.css">
+		<!-- Normalize -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 
-      <!-- Browswer support for fixed positioning -->
-      <!--[if lte IE 6]>
+		<!-- Browswer support for fixed positioning -->
+		<!--[if lte IE 6]>
 	      <style>#top, #bottom, #left, #right { display: none; }</style>
         <![endif]
       -->
-  </head>
-  <body>
+	</head>
+	<body>
+		<!-- Body Border -->
+		<div class="left"></div>
+		<div class="right"></div>
+		<div class="top"></div>
+		<div class="bottom"></div>
 
-    <!-- Body Border -->
-    <div class="left"></div>
-    <div class="right"></div>
-    <div class="top"></div>
-    <div class="bottom"></div>
+		<!-- Main Menu -->
+		<nav>
+			<ul role="menubar" class="navigation__list">
+				<li role="presentation" class="navigation__li">
+					<a href="index.html" role="menuitem" class="navigation__list--item">
+						<i class="fa-solid fa-house-chimney" title="house icon"></i>
+						Home
+					</a>
+				</li>
+				<li role="presentation" class="navigation__li">
+					<a href="about.html" role="menuitem" class="navigation__list--item">
+						<i class="fa-solid fa-puzzle-piece" title="puzzle piece icon"></i>
+						About
+					</a>
+				</li>
+				<li role="presentation" class="navigation__li">
+					<a
+						href="work.html"
+						role="menuitem"
+						class="navigation__list--item__active"
+					>
+						<i class="fa-solid fa-code" title="angle bracket icon"></i>
+						Portfolio
+					</a>
+				</li>
+				<li role="presentation" class="navigation__li">
+					<a href="contact.html" role="menuitem" class="navigation__list--item">
+						<i class="fa-solid fa-at" title="'at' icon"></i>
+						Contact
+					</a>
+				</li>
+			</ul>
+		</nav>
 
-    <!-- Main Menu -->
-    <nav>
-      <ul role="menubar" class="navigation__list">
-        <li role="presentation" class="navigation__li">
-          <a
-            href="index.html"
-            role="menuitem"
-            class="navigation__list--item">
-            <i class="fa-solid fa-house-chimney" alt="house icon"></i>
-            Home
-          </a>
-        </li>
-        <li role="presentation" class="navigation__li">
-          <a
-            href="about.html"
-            role="menuitem"
-            class="navigation__list--item">
-            <i class="fa-solid fa-puzzle-piece" alt="puzzle piece icon"></i>
-            About
-          </a>
-        </li>
-        <li role="presentation" class="navigation__li">
-          <a
-            href="work.html"
-            role="menuitem"
-            class="navigation__list--item__active">
-            <i class="fa-solid fa-code" alt="angle bracket icon"></i>
-            Portfolio
-          </a>
-        </li>
-        <li role="presentation" class="navigation__li">
-          <a
-            href="contact.html"
-            role="menuitem"
-            class="navigation__list--item">
-            <i class="fa-solid fa-at" alt="'at' icon"></i>
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
+		<!-- Portfolio content begins -->
+		<section>
+			<div class="work__grid">
+				<!-- Portfolio items in grid -->
 
-    <!-- Portfolio content begins -->
-    <section>
-      <div class="work__grid">
+				<!-- Pokemon App -->
+				<div class="work__grid--item">
+					<h2 class="work__grid--heading">Pokedex!</h2>
+					<p>
+						This app is a quick reference for facts and images of all your
+						favorite pokemon. Click any pokemon name button to see a picture of
+						the pokemon, as well as height, weight, and type.
+					</p>
+					<p>
+						This app was built using HTML5, SCSS, and JavaScript ES6. After
+						learning to create modals from scratch, I used bootstrap frameworks
+						to create the navbar and modals. Pokemon data is drawn from the
+						external api,
+						<a class="grid__item--link" href="https://pokeapi.co/"
+							>https://pokeapi.co/</a
+						>, using AJAX. I used ESLint and Prettier to ensure my code was
+						error-free.
+					</p>
+					<div class="work__buttons">
+						<a
+							href="https://scaramouche9.github.io/Pokedex/"
+							class="button work__grid--link"
+							target="_blank"
+							>View app</a
+						>
+						<br />
+						<br />
+						<a
+							href="https://github.com/Scaramouche9/Pokedex"
+							class="button work__grid--link"
+							target="_blank"
+							>View code on Github</a
+						>
+					</div>
+				</div>
 
-        <!-- Portfolio items in grid -->
-        <div class="work__grid--item">
-          <h2>Portfolio Website</h2>
-          <p>I built this website from scratch as a playground to try new techniques I learn and showcase my favorite work while conveying my tastes and personality.</p>
-          <p>This was my first go at implementing HTML5 and CSS. I've experimented with tables, flexbox and grid layouts, and design principles, to name a few.</p>
-          <a href="https://scaramouche9.github.io/Portfolio-Website/" target="_blank" >View website</a>
-          <br>
-          <a href="https://github.com/Scaramouche9/Portfolio-Website" target="_blank" >View code on Github</a>
-        </div>
-        <div class="work__grid--item">
-          <h2>Pokedex!</h2>
-          <p>This app is a quick reference for facts and images of all your favorite pokemon. Click any pokemon name button to see a picture of the pokemon, as well as height, weight, and type.</p>
-          <p>This app was built using HTML5, SCSS, and JavaScript ES6. After learning to create modals from scratch, I used bootstrap frameworks to create the navbar and modals. Pokemon data is drawn from the external api, <a class="grid__item--link" href="https://pokeapi.co/">https://pokeapi.co/</a>, using AJAX. I used ESLint and Prettier to ensure my code was error-free.</p>
-          <a href="https://scaramouche9.github.io/Pokedex/" target="_blank" >View app</a>
-          <br>
-          <a href="https://github.com/Scaramouche9/Pokedex" target="_blank" >View code on Github</a>
-        </div>
-        <div class="work__grid--item">
-          <h2>To-do List</h2>
-          <p>A no-nonsense app that creates lists, letting users add, delete, reorder, and cross off items</p>
-          <p>I customized html and css templates and wrote the JavaScript for this app using the jQuery library. </p>
-          <a href="https://scaramouche9.github.io/to-do-today/" target="_blank" >View app</a>
-          <br>
-          <a href="https://github.com/Scaramouche9/to-do-today" target="_blank" >View code on Github</a>
-        </div>
-      </div>
-    </section>
-    
-    <br>
+				<div class="work__grid--item">
+					<h2 class="work__grid--heading">Higher Lower</h2>
+					<p>A simple number guessing game</p>
+					<p>This app was built using HTML, CSS, and JavaScript.</p>
+					<div class="work__buttons">
+						<a
+							href="https://scaramouche9.github.io/HigherLower/"
+							class="button work__grid--link"
+							target="_blank"
+							>View app</a
+						>
+						<br />
+						<br />
+						<a
+							href="https://github.com/Scaramouche9/to-do-today"
+							class="button work__grid--link"
+							target="_blank"
+							>View code on Github</a
+						>
+					</div>
+				</div>
 
-    <!-- Footer: links to social media profiles -->
-    <footer class="page-footer">
-      <div>
+				<div class="work__grid--item">
+					<h2 class="work__grid--heading">Portfolio Website</h2>
+					<p>
+						I built this website from scratch as a playground to try new
+						techniques I learn and showcase my favorite work while conveying my
+						tastes and personality.
+					</p>
+					<p>
+						This was my first go at implementing HTML5 and CSS. I've
+						experimented with tables, flexbox and grid layouts, and design
+						principles, to name a few.
+					</p>
+					<div class="work__buttons">
+						<a
+							href="https://scaramouche9.github.io/Portfolio-Website/"
+							class="button work__grid--link"
+							target="_blank"
+							>View website</a
+						>
+						<br />
+						<br />
+						<a
+							href="https://github.com/Scaramouche9/Portfolio-Website"
+							class="button work__grid--link"
+							target="_blank"
+							>View code on Github</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <!-- Github icon -->
-        <a class="footer__social" href="https://github.com/Scaramouche9" target="_blank">
-          <img src="img/github_icon.svg" alt="github icon">
-        </a>
+		<br />
 
-        <!-- Linkedin icon -->
-        <a class="footer__social" href="https://www.linkedin.com/in/emily-davies9/" target="_blank">
-          <img src="img/linkedin_icon.svg" alt="linkedin icon">
-        </a>
-      </div>
-    </footer>
+		<!-- Footer: links to social media profiles -->
+		<footer class="page-footer">
+			<div>
+				<!-- Github icon -->
+				<a
+					class="footer__social"
+					href="https://github.com/Scaramouche9"
+					target="_blank"
+				>
+					<img src="img/github_icon.svg" alt="github icon" />
+				</a>
 
-    <!-- Accessibility checklist -->
-    <script src="js/tota11y.min.js"></script>
-    
-  </body>
+				<!-- Linkedin icon -->
+				<a
+					class="footer__social"
+					href="https://www.linkedin.com/in/emily-davies9/"
+					target="_blank"
+				>
+					<img src="img/linkedin_icon.svg" alt="linkedin icon" />
+				</a>
+			</div>
+		</footer>
+
+		<!-- Accessibility checklist -->
+		<script src="js/tota11y.min.js"></script>
+	</body>
 </html>
