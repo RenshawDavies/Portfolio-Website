@@ -1,7 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-0LYL8F8JT2"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'G-0LYL8F8JT2');
+		</script>
 		<meta charset="utf-8" />
+		<meta name="description" content="Emily's Coding Portfolio" />
+		<meta name="keywords" content="HTML,CSS,JavaScript,Bootstrap" />
+		<meta name="author" content="Emily Davies" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Work - Emily Davies: Coding, Puzzling, Musicing</title>
 
@@ -59,7 +76,7 @@
 				</li>
 				<li role="presentation" class="navigation__li">
 					<a href="about.html" role="menuitem" class="navigation__list--item">
-						<i class="fa-solid fa-puzzle-piece" title="puzzle piece icon"></i>
+						<i class="fa-solid fa-music" title="music note icon"></i>
 						About
 					</a>
 				</li>
@@ -69,13 +86,13 @@
 						role="menuitem"
 						class="navigation__list--item__active"
 					>
-						<i class="fa-solid fa-code" title="angle bracket icon"></i>
+						<i class="fa-solid fa-chart-line" title="line chart icon"></i>
 						Portfolio
 					</a>
 				</li>
 				<li role="presentation" class="navigation__li">
 					<a href="contact.html" role="menuitem" class="navigation__list--item">
-						<i class="fa-solid fa-at" title="'at' icon"></i>
+						<i class="fa-regular fa-envelope" title="envelope icon"></i>
 						Contact
 					</a>
 				</li>
@@ -87,94 +104,65 @@
 			<div class="work__grid">
 				<!-- Portfolio items in grid -->
 
-				<!-- Pokemon App -->
-				<div class="work__grid--item">
-					<h2 class="work__grid--heading">Pokedex!</h2>
-					<p>
-						This app is a quick reference for facts and images of all your
-						favorite pokemon. Click any pokemon name button to see a picture of
-						the pokemon, as well as height, weight, and type.
-					</p>
-					<p>
-						This app was built using HTML5, SCSS, and JavaScript ES6. After
-						learning to create modals from scratch, I used bootstrap frameworks
-						to create the navbar and modals. Pokemon data is drawn from the
-						external api,
-						<a class="grid__item--link" href="https://pokeapi.co/"
-							>https://pokeapi.co/</a
-						>, using AJAX. I used ESLint and Prettier to ensure my code was
-						error-free.
-					</p>
-					<div class="work__buttons">
-						<a
-							href="https://scaramouche9.github.io/Pokedex/"
-							class="button work__grid--link"
-							target="_blank"
-							>View app</a
-						>
-						<br />
-						<br />
-						<a
-							href="https://github.com/Scaramouche9/Pokedex"
-							class="button work__grid--link"
-							target="_blank"
-							>View code on Github</a
-						>
-					</div>
-				</div>
+				<!-- Natural Disaster Trends Dashboard -->
 
-				<div class="work__grid--item">
-					<h2 class="work__grid--heading">Higher Lower</h2>
-					<p>A number guessing game</p>
-					<p>
-						This app was built using HTML, CSS (with Bootstrap), and JavaScript.
-						I made use of forms and button click actions to allow users to input
-						a number range and then guess a secret number.
-					</p>
-					<div class="work__buttons">
-						<a
-							href="https://scaramouche9.github.io/HigherLower/"
-							class="button work__grid--link"
-							target="_blank"
-							>View app</a
-						>
-						<br />
-						<br />
-						<a
-							href="https://github.com/Scaramouche9/to-do-today"
-							class="button work__grid--link"
-							target="_blank"
-							>View code on Github</a
-						>
-					</div>
-				</div>
+				<!-- Image -->
+				<img
+					src="img/NaturalDisasterTrends.png"
+					alt="Dashboard of NaturalDisasterTrends1900-2021"
+					class="work__grid--item"
+					id="NDT_img"
+				/>
 
+				<!-- Info -->
 				<div class="work__grid--item">
-					<h2 class="work__grid--heading">Portfolio Website</h2>
-					<p>
-						I built this website from scratch as a playground to try new
-						techniques I learn and showcase my favorite work while conveying my
-						tastes and personality.
+					<h2 class="work__grid--heading">Natural Disaster Trends 1900-2021</h2>
+					<p class="work__grid--p">
+						A prompt on
+						<a
+							class="grid__item--link"
+							href="https://earth.org/help-data-science/"
+							>Earth.Org</a
+						>
+						inspired me to create this dashboard, which looks at trends in
+						natural disasters. Specifically, I looked at the frequency and
+						magnitude of floods, cyclones, earthquakes, and wildfires from
+						1900-2021.
 					</p>
-					<p>
-						This was my first go at implementing HTML5 and CSS. I've
-						experimented with tables, flexbox and grid layouts, and design
-						principles, to name a few.
+					<p class="work__grid--p">Dataset:</p>
+					<p class="work__grid--p">
+						I found the dataset I needed on Kaggle:
+						<a
+							class="grid__item--link"
+							href="https://www.kaggle.com/datasets/brsdincer/all-natural-disasters-19002021-eosdis"
+							>ALL NATURAL DISASTERS 1900-2021 / EOSDIS</a
+						>
+					</p>
+					<p class="work__grid--p">Cleaning and Enhancing:</p>
+					<p class="work__grid--p">
+						I used Pandas to begin cleaning the data, using VSCode via Jupyter
+						Notebooks. Once I got the data to a managable size, I finished
+						cleaning and did my enhancing in Google Sheets.
+					</p>
+					<p class="work__grid--p">Analysis:</p>
+					<p class="work__grid--p">
+						I imported my csv to Tableau and used basic visualizations to
+						determine the scope of my project before creating my dashboard.
 					</p>
 					<div class="work__buttons">
 						<a
-							href="https://scaramouche9.github.io/Portfolio-Website/"
+							href="https://public.tableau.com/app/profile/emily.davies1095/viz/NaturalDisasterTrends1900-2020/Dashboard1"
 							class="button work__grid--link"
 							target="_blank"
-							>View website</a
+							>View Dashboard</a
 						>
 						<br />
 						<br />
 						<a
-							href="https://github.com/Scaramouche9/Portfolio-Website"
+							href="https://github.com/Scaramouche9/Extreme_Weather"
 							class="button work__grid--link"
 							target="_blank"
-							>View code on Github</a
+							>Github Code</a
 						>
 					</div>
 				</div>
@@ -192,7 +180,12 @@
 					href="https://github.com/Scaramouche9"
 					target="_blank"
 				>
-					<img src="img/github_icon.svg" alt="github icon" />
+					<img
+						src="img/github_icon.svg"
+						title="github icon"
+						width="40"
+						height="40"
+					/>
 				</a>
 
 				<!-- Linkedin icon -->
@@ -201,12 +194,14 @@
 					href="https://www.linkedin.com/in/emily-davies9/"
 					target="_blank"
 				>
-					<img src="img/linkedin_icon.svg" alt="linkedin icon" />
+					<img
+						src="img/linkedin_icon.svg"
+						title="linkedin icon"
+						width="40"
+						height="40"
+					/>
 				</a>
 			</div>
 		</footer>
-
-		<!-- Accessibility checklist -->
-		<script src="js/tota11y.min.js"></script>
 	</body>
 </html>

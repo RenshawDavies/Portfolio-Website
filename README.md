@@ -16,11 +16,10 @@ This was my first go at implementing HTML5 and CSS. I've experimented with table
 
 Future plans:
 This project in particular is ever growing. In order of priority, I intend to:
-1. Ensure the site is responsive and accessible
-2. Add a border to all pages, improve buttons, and clean up code
-3. Add icons to navbar
-4. Make about section more interactive, adding links to relevant content
-5. Add additional color scheme options for optimal accessibility and customized experience
+1. Optimize accessibility to meet <a href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a> standards
+2. Add light, dark, and contrast modes for greater accessibility and customization
+3. Make <a href="https://scaramouche9.github.io/Portfolio-Website/about.html">about</a> section more interactive, adding links to relevant content
+4. Add more projects!
 
 ## Usage <a name = "usage"></a>
 
