@@ -257,7 +257,7 @@ th {
 @supports (display: grid) {
 	.work__grid {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		/* grid-template-columns: 1fr 1fr 1fr; */
 		grid-gap: 2rem;
 		margin: 5%;
 	}
@@ -268,12 +268,12 @@ th {
 		color: var(--primary-color-lighter);
 		padding: 3rem;
 		line-height: 2rem;
-		text-align: center;
+		/* text-align: center; */
 	}
 
 	.work__buttons {
 		display: inline-block;
-		text-align: center;
+		/* text-align: center; */
 		line-height: 2rem;
 		margin-top: 1rem;
 		margin-bottom: 2rem;
@@ -282,6 +282,13 @@ th {
 	.work__grid--link {
 		font-size: 1.5rem;
 		margin: auto;
+	}
+
+	#NDT_img {
+		width: 70vw;
+		height: auto;
+		margin: auto;
+		padding: 0;
 	}
 }
 

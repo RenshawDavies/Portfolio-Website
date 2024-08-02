@@ -76,7 +76,7 @@
 				</li>
 				<li role="presentation" class="navigation__li">
 					<a href="about.html" role="menuitem" class="navigation__list--item">
-						<i class="fa-solid fa-puzzle-piece" title="puzzle piece icon"></i>
+						<i class="fa-solid fa-music" title="music note icon"></i>
 						About
 					</a>
 				</li>
@@ -86,13 +86,13 @@
 						role="menuitem"
 						class="navigation__list--item__active"
 					>
-						<i class="fa-solid fa-code" title="angle bracket icon"></i>
+						<i class="fa-solid fa-chart-line" title="line chart icon"></i>
 						Portfolio
 					</a>
 				</li>
 				<li role="presentation" class="navigation__li">
 					<a href="contact.html" role="menuitem" class="navigation__list--item">
-						<i class="fa-solid fa-at" title="'at' icon"></i>
+						<i class="fa-regular fa-envelope" title="envelope icon"></i>
 						Contact
 					</a>
 				</li>
@@ -104,93 +104,62 @@
 			<div class="work__grid">
 				<!-- Portfolio items in grid -->
 
-				<!-- Pokemon App -->
-				<div class="work__grid--item">
-					<h2 class="work__grid--heading">Pokedex!</h2>
-					<p class="work__grid--p">
-						This app is a quick reference for facts and images of all your
-						favorite pokemon. Click any pokemon name button to see a picture of
-						the pokemon, as well as height, weight, and type.
-					</p>
-					<p class="work__grid--p">
-						This app was built using HTML5, SCSS, and JavaScript ES6. After
-						learning to create modals from scratch, I used bootstrap frameworks
-						to create the navbar and modals. Pokemon data is drawn from the
-						external api,
-						<a class="grid__item--link" href="https://pokeapi.co/"
-							>https://pokeapi.co/</a
-						>, using AJAX. I used ESLint and Prettier to ensure my code was
-						error-free.
-					</p>
-					<div class="work__buttons">
-						<a
-							href="https://scaramouche9.github.io/Pokedex/"
-							class="button work__grid--link"
-							target="_blank"
-							>View App</a
-						>
-						<br />
-						<br />
-						<a
-							href="https://github.com/Scaramouche9/Pokedex"
-							class="button work__grid--link"
-							target="_blank"
-							>Github Code</a
-						>
-					</div>
-				</div>
+				<!-- Natural Disaster Trends Dashboard -->
 
-				<!-- Character Sheet Builder -->
-				<div class="work__grid--item">
-					<h2 class="work__grid--heading">Character Sheet Builder</h2>
-					<p class="work__grid--p">
-						This app is a collaborative effort with two other developers. Users
-						are able to fill out a form to create and save a character for role
-						playing games. They also have the option to upload an image for each
-						character they create.
-					</p>
-					<p class="work__grid--p">
-						We used SQL and Java for the backend, JavaScript, HTML, and CSS for
-						the front end. We used Cloudinary to store images in the cloud.
-						Version control was facilitated via GitHib.
-					</p>
-					<div class="work__buttons">
-						<!-- <a
-							href=""
-							class="button work__grid--link"
-							target="_blank"
-							>View app</a
-						>
-						<br /> -->
-						<br />
-						<a
-							href="https://github.com/Scaramouche9/sots-capstone-project"
-							class="button work__grid--link"
-							target="_blank"
-							>Github Code</a
-						>
-					</div>
-				</div>
+				<!-- Image -->
+				<img
+					src="img/NaturalDisasterTrends.png"
+					alt="Dashboard of NaturalDisasterTrends1900-2021"
+					class="work__grid--item"
+					id="NDT_img"
+				/>
 
-				<!-- Higher Lower -->
+				<!-- Info -->
 				<div class="work__grid--item">
-					<h2 class="work__grid--heading">Higher Lower</h2>
+					<h2 class="work__grid--heading">Natural Disaster Trends 1900-2021</h2>
 					<p class="work__grid--p">
-						This app was built using HTML, CSS (with Bootstrap), and JavaScript.
-						I made use of forms and button click actions to allow users to input
-						a number range and then guess a secret number.
+						A prompt on
+						<a
+							class="grid__item--link"
+							href="https://earth.org/help-data-science/"
+							>Earth.Org</a
+						>
+						inspired me to create this dashboard, which looks at trends in
+						natural disasters. Specifically, I looked at the frequency and
+						magnitude of floods, cyclones, earthquakes, and wildfires from
+						1900-2021.
+					</p>
+					<p class="work__grid--p">Dataset:</p>
+					<p class="work__grid--p">
+						I found the dataset I needed on Kaggle:
+						<a
+							class="grid__item--link"
+							href="https://www.kaggle.com/datasets/brsdincer/all-natural-disasters-19002021-eosdis"
+							>ALL NATURAL DISASTERS 1900-2021 / EOSDIS</a
+						>
+					</p>
+					<p class="work__grid--p">Cleaning and Enhancing:</p>
+					<p class="work__grid--p">
+						I used Pandas to begin cleaning the data, using VSCode via Jupyter
+						Notebooks. Once I got the data to a managable size, I finished
+						cleaning and did my enhancing in Google Sheets.
+					</p>
+					<p class="work__grid--p">Analysis:</p>
+					<p class="work__grid--p">
+						I imported my csv to Tableau and used basic visualizations to
+						determine the scope of my project before creating my dashboard.
 					</p>
 					<div class="work__buttons">
 						<a
-							href="https://scaramouche9.github.io/HigherLower/"
+							href="https://public.tableau.com/app/profile/emily.davies1095/viz/NaturalDisasterTrends1900-2020/Dashboard1"
 							class="button work__grid--link"
 							target="_blank"
-							>View App</a
+							>View Dashboard</a
 						>
 						<br />
 						<br />
 						<a
-							href="https://github.com/Scaramouche9/HigherLower"
+							href="https://github.com/Scaramouche9/Extreme_Weather"
 							class="button work__grid--link"
 							target="_blank"
 							>Github Code</a
