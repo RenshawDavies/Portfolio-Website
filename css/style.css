@@ -11,7 +11,7 @@
 	--primary-font: 'Josefin Sans', sans-serif;
 	--primary-weight-thin: 200;
 	--primary-weight-bold: 400;
-	--secondary-font: 'Quicksand', sans-serif;
+	--secondary-font: 'Avenir Light', sans-serif;
 	--secondary-weight-thin: 400;
 	--secondary-weight-bold: 600;
 }
@@ -61,9 +61,8 @@ button,
 	color: var(--primary-color-darker);
 	text-decoration: none;
 	border-radius: 0.25rem;
-	font-family: var(--primary-font);
-	font-weight: var(--primary-weight-bold);
-	font-size: 2rem;
+	font-family: var(--secondary-font);
+	font-size: 1.5rem;
 	transition: 0.2s opacity;
 	padding: 0.5rem;
 	margin: 2rem;
@@ -166,6 +165,7 @@ button:focus,
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
+	font-family: var(--secondary-font);
 	justify-content: center;
 }
 
@@ -204,6 +204,7 @@ button:focus,
 	color: var(--primary-color-lighter);
 	text-align: center;
 	font-weight: var(--secondary-weight-bold);
+	font-size: 1.25rem;
 }
 
 h2 {
@@ -211,7 +212,6 @@ h2 {
 }
 
 .about__p {
-	font-weight: var(--secondary-weight-thin);
 	line-height: 2rem;
 }
 
@@ -242,6 +242,7 @@ th {
 
 #resume-button {
 	display: inline-block;
+	font-family: var(--secondary-font);
 }
 
 /* PORTFOLIO */
@@ -429,9 +430,13 @@ th {
 		border-right: none;
 		padding: 0;
 	}
+
+	.resume__button {
+		font-size: 1rem;
+	}
 }
 
-@media all and (max-width: 300px) {
+@media all and (max-width: 400px) {
 	.navigation__li {
 		font-size: 0.75rem;
 	}
@@ -447,6 +452,7 @@ th {
 	}
 
 	table {
+	.resume__button {
 		font-size: 0.5rem;
 	}
 
