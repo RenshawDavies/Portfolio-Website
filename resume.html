@@ -16,11 +16,11 @@
 			gtag('config', 'G-0LYL8F8JT2');
 		</script>
 		<meta charset="utf-8" />
-		<meta name="description" content="Davies Data Homepage" />
+		<meta name="description" content="Emily's Resume" />
 		<meta name="keywords" content="SQL, Excel, Google Sheets, Tableau, Data" />
 		<meta name="author" content="Emily Davies" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Home - Davies Data</title>
+		<title>Resume - Davies Data</title>
 
 		<!-- Favicon -->
 		<link
@@ -59,16 +59,16 @@
 	</head>
 	<body>
 		<!-- Body Border -->
+		<!-- <div class="left"></div>
+		<div class="right"></div>
+		<div class="top"></div>
+		<div class="bottom"></div> -->
 
 		<!-- Main Menu -->
 		<nav>
 			<ul role="menubar" class="navigation__list">
 				<li role="presentation" class="navigation__li">
-					<a
-						href="index.html"
-						role="menuitem"
-						class="navigation__list--item__active"
-					>
+					<a href="index.html" role="menuitem" class="navigation__list--item">
 						<i class="fa-solid fa-house-chimney" title="house icon"></i>
 						Home
 					</a>
@@ -86,7 +86,11 @@
 					</a>
 				</li>
 				<li role="presentation" class="navigation__li">
-					<a href="resume.html" role="menuitem" class="navigation__list--item">
+					<a
+						href="resume.html"
+						role="menuitem"
+						class="navigation__list--item__active"
+					>
 						<i class="fa-solid fa-file" title="resume icon"></i>
 						Resume
 					</a>
@@ -94,26 +98,33 @@
 			</ul>
 		</nav>
 
-		<!-- Home content begins -->
-		<main id="home">
-			<div class="greeting">
-				<!-- Photo of self -->
+		<!-- Resume content begins -->
+		<main id="resume">
+			<div class="resume__content">
+				<!-- Resume -->
 				<img
-					src="img/Teal.ico"
-					alt="Photo of Emily Davies"
-					width="530"
-					height="530"
-					class="greeting__item"
-					id="home__img"
+					src="img/Resume2024(Online).png"
+					class="resume__item"
+					id="resume__img"
+					alt="Emily Davies' Resume"
 				/>
 
-				<h1 class="greeting__item" id="home__h1">
-					Hi, I'm Emily! <br />I love solving problems with data and maps.
-				</h1>
-
-				<a href="work.html" class="button greeting__item" id="home__button">
-					My Portfolio</a
-				>
+				<div class="resume__buttons">
+					<a
+						href="docs/Resume2024.pdf"
+						class="resume__item button resume__button"
+						id="download__button"
+						download
+						>Download PDF</a
+					>
+					<a
+						href="https://www.linkedin.com/in/emily-davies9/"
+						class="resume__item button resume__button"
+						id="linkedin__button"
+						download
+						>LinkedIn for More</a
+					>
+				</div>
 			</div>
 		</main>
 
@@ -143,6 +154,34 @@
 					<img
 						src="img/linkedin_icon.svg"
 						title="linkedin icon"
+						width="40"
+						height="40"
+					/>
+				</a>
+
+				<!-- Tableau icon -->
+				<a
+					class="footer__social"
+					href="https://public.tableau.com/app/profile/emily.davies1095"
+					target="_blank"
+				>
+					<img
+						src="img/tableau_icon.svg"
+						title="tableau icon"
+						width="40"
+						height="40"
+					/>
+				</a>
+
+				<!-- Email icon -->
+				<a
+					class="footer__social"
+					href="mailto:emilygdavies42@gmail.com"
+					target="_blank"
+				>
+					<img
+						src="img/email_icon.svg"
+						title="email icon"
 						width="40"
 						height="40"
 					/>
