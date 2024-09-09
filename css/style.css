@@ -225,7 +225,6 @@ button:focus,
 .about__h2 {
 	color: var(--primary-color-lighter);
 	text-align: center;
-	font-weight: var(--secondary-weight-bold);
 	font-size: 1.25rem;
 	margin: 2rem;
 	line-height: 3rem;
@@ -468,8 +467,6 @@ h2 {
 		margin: 0rem;
 	}
 
-	#home__button {
-		font-size: 1rem;
 	.home__p {
 		padding: 0rem;
 	}
