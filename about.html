@@ -16,11 +16,11 @@
 			gtag('config', 'G-0LYL8F8JT2');
 		</script>
 		<meta charset="utf-8" />
-		<meta name="description" content="How Emily started coding" />
-		<meta name="keywords" content="HTML,CSS,JavaScript,Bootstrap" />
+		<meta name="description" content="About Emily's Road to Data" />
+		<meta name="keywords" content="SQL, Excel, Google Sheets, Tableau, Data" />
 		<meta name="author" content="Emily Davies" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>About - Emily Davies: Coding, Puzzling, Musicing</title>
+		<title>About - Davies Data</title>
 
 		<!-- Favicon -->
 		<link
@@ -56,12 +56,6 @@
     -->
 	</head>
 	<body>
-		<!-- Body Border -->
-		<div class="left"></div>
-		<div class="right"></div>
-		<div class="top"></div>
-		<div class="bottom"></div>
-
 		<!-- Main Menu -->
 		<nav>
 			<ul role="menubar" class="navigation__list">
@@ -88,9 +82,9 @@
 					</a>
 				</li>
 				<li role="presentation" class="navigation__li">
-					<a href="contact.html" role="menuitem" class="navigation__list--item">
-						<i class="fa-regular fa-envelope" title="envelope icon"></i>
-						Contact
+					<a href="resume.html" role="menuitem" class="navigation__list--item">
+						<i class="fa-solid fa-file" title="resume icon"></i>
+						Resume
 					</a>
 				</li>
 			</ul>
@@ -104,61 +98,89 @@
 					I traveled the road from indie rocker to data rockstar
 				</h1>
 
-				<h3 class="about__h3">
-					Along the way, I’ve sought opportunities to maximize profits and
-					efficiency with the power of data…
-				</h3>
+				<h2 class="about__h2">
+					Along the way, I’ve proactively sought opportunities to use data and
+					spreadsheets to make life easier. Click my stories below to learn how:
+				</h2>
 
-				<p class="about__p">
-					My band, Renshaw Davies, booked, promoted, and performed international
-					tours. This took immense organization! I recorded communications,
-					tracked finances, and compared gear purchases using Excel
-				</p>
-
-				<p class="about__p">
-					As an audiovisual technician at the New Orleans Convention Center, we
-					were sometimes short on gear for larger shows. I asked permission to
-					conduct inventory of our storage rooms and make recommendations for
-					future purchases and storage locations based on our needs from
-					previous shows
-				</p>
-
-				<p class="about__p">
-					At mumms Software, I helped to generate leads by researching potential
-					clients in target regions and logging my findings in a Google Sheet
-				</p>
-
-				<p class="about__p">
-					As sales manager at Hollywood Lights, I took the initiative to make
-					projections using our sales history to determine future purchases and
-					pricing
-				</p>
-
-				<p class="about__p">
-					These experiences finally led me to pursue a tech career with
-					Genesis10, where I learned to use SQL as a backend for applications
-				</p>
-
-				<p class="about__p">
-					At Barnet Associates, I've had the opportunity to use Tableau to track
-					payroll and Jitterbit for data integration
-				</p>
-
-				<br />
-				<br />
-
-				<!-- Resume -->
-				<div id="resume-container">
-					<a
-						href="docs/Resume2024.pdf"
-						class="button"
-						id="resume-button"
-						download
-						>Download my Resume</a
-					>
+				<div id="band" class="about__section">
+					<button class="about__button">
+						How I planned tours with my band
+					</button>
+					<p class="about__p">
+						My band, Renshaw Davies, booked, promoted, and performed
+						international tours. This took immense organization! I recorded
+						communications with venues and bands, tracked finances, and compared
+						gear purchases using Google Sheets
+					</p>
 				</div>
 
-				<br />
+				<div id="av" class="about__section">
+					<button class="about__button">
+						How I calmed chaos at the New Orleans Convention Center
+					</button>
+					<p class="about__p">
+						As an audiovisual technician at the New Orleans Convention Center,
+						we began getting spikes in demand for gear that we were unprepared
+						to provide. We fit together solutions with rented gear and what we
+						had, but it added to the chaos of an already busy show. When we hit
+						a slower period, I asked if I conduct inventory of our storage rooms
+						to help inform our needs. I then looked over equipment orders from
+						the past two years. With these two data sets, I was able to
+						confidently make purchase recommendations for my supervisors
+					</p>
+				</div>
+
+				<div id="mumms" class="about__section">
+					<button class="about__button">
+						How I generated sales leads for a software company
+					</button>
+					<p class="about__p">
+						At mumms Software, we specialized in record keeping solutions for
+						end of life care. I helped to generate leads by researching hospices
+						and palliative care centers in target regions and logging my
+						findings in Google Sheets
+					</p>
+				</div>
+
+				<div id="hl" class="about__section">
+					<button class="about__button">
+						How I researched purchases at en events retailer
+					</button>
+					<p class="about__p">
+						As store manager at Hollywood Lights, I was in charge of purchasing
+						from the Portland, OR location. I didn't want to arbitrarily restock
+						items just to have them sit on the shelves indefinitely. So I took
+						the initiative to make projections using our sales history to
+						determine what and how much we should buy, and what to charge for it
+					</p>
+				</div>
+
+				<div id="dev10" class="about__section">
+					<button class="about__button">
+						How I identified my love of data
+					</button>
+					<p class="about__p">
+						My love of problem solving led me to pursue a tech career, starting
+						with development. I joined a job training program with Genesis10,
+						where I learned to use SQL as a backend for applications. I soon
+						realized data is where my true passion lies.
+					</p>
+				</div>
+
+				<div id="ba" class="about__section">
+					<button class="about__button">How I made data my career</button>
+					<p class="about__p">
+						At Barnet Associates, I've had the opportunity to use Tableau to
+						track payroll, Jitterbit for data integration, and SSMS to create
+						queries. I'm learning new skills everyday and loving every moment
+					</p>
+				</div>
+
+				<h2 class="about__h2">
+					How can I help you bring clarity to your organization?
+				</h2>
+
 				<br />
 			</div>
 		</main>
@@ -193,7 +215,48 @@
 						height="40"
 					/>
 				</a>
+
+				<!-- Tableau icon -->
+				<a
+					class="footer__social"
+					href="https://public.tableau.com/app/profile/emily.davies1095"
+					target="_blank"
+				>
+					<img
+						src="img/tableau_icon.svg"
+						title="tableau icon"
+						width="40"
+						height="40"
+					/>
+				</a>
+
+				<!-- Email icon -->
+				<a
+					class="footer__social"
+					href="mailto:emilygdavies42@gmail.com"
+					target="_blank"
+				>
+					<img
+						src="img/email_icon.svg"
+						title="email icon"
+						width="40"
+						height="40"
+					/>
+				</a>
 			</div>
 		</footer>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const buttons = document.querySelectorAll('.about__button');
+
+				buttons.forEach((button) => {
+					button.addEventListener('click', function () {
+						const paragraph = this.nextElementSibling;
+						paragraph.classList.toggle('show');
+					});
+				});
+			});
+		</script>
 	</body>
 </html>

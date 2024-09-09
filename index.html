@@ -16,11 +16,11 @@
 			gtag('config', 'G-0LYL8F8JT2');
 		</script>
 		<meta charset="utf-8" />
-		<meta name="description" content="Coding Portfolio Homepage" />
-		<meta name="keywords" content="HTML,CSS,JavaScript,Bootstrap" />
+		<meta name="description" content="Davies Data Homepage" />
+		<meta name="keywords" content="SQL, Excel, Google Sheets, Tableau, Data" />
 		<meta name="author" content="Emily Davies" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Home - Emily Davies: Coding, Puzzling, Musicing</title>
+		<title>Home - Davies Data</title>
 
 		<!-- Favicon -->
 		<link
@@ -59,10 +59,6 @@
 	</head>
 	<body>
 		<!-- Body Border -->
-		<div class="left"></div>
-		<div class="right"></div>
-		<div class="top"></div>
-		<div class="bottom"></div>
 
 		<!-- Main Menu -->
 		<nav>
@@ -90,9 +86,9 @@
 					</a>
 				</li>
 				<li role="presentation" class="navigation__li">
-					<a href="contact.html" role="menuitem" class="navigation__list--item">
-						<i class="fa-regular fa-envelope" title="envelope icon"></i>
-						Contact
+					<a href="resume.html" role="menuitem" class="navigation__list--item">
+						<i class="fa-solid fa-file" title="resume icon"></i>
+						Resume
 					</a>
 				</li>
 			</ul>
@@ -102,22 +98,24 @@
 		<main id="home">
 			<div class="greeting">
 				<!-- Photo of self -->
-				<img
-					src="img/Teal.ico"
-					alt="Photo of Emily Davies"
-					width="530"
-					height="530"
-					class="greeting__item"
-					id="home__img"
-				/>
+				<div class="greeting__item" id="greeting__img">
+					<img
+						src="img/Teal.ico"
+						alt="Photo of Emily Davies"
+						width="530"
+						height="530"
+						id="home__img"
+					/>
+				</div>
 
-				<h1 class="greeting__item" id="home__h1">
-					Hi, I'm Emily! <br />I love solving problems with data and maps.
-				</h1>
-
-				<a href="work.html" class="button greeting__item" id="home__button">
-					My Portfolio</a
-				>
+				<div class="greeting__item">
+					<h1 id="home__h1">Hi, I'm Emily! <br /></h1>
+					<p class="home__p">
+						I began creating spreadsheets to solve my problems years before I’d
+						even heard of data analysis
+					</p>
+					<p class="home__p">Turning chaos to clarity is my specialty</p>
+				</div>
 			</div>
 		</main>
 
@@ -147,6 +145,34 @@
 					<img
 						src="img/linkedin_icon.svg"
 						title="linkedin icon"
+						width="40"
+						height="40"
+					/>
+				</a>
+
+				<!-- Tableau icon -->
+				<a
+					class="footer__social"
+					href="https://public.tableau.com/app/profile/emily.davies1095"
+					target="_blank"
+				>
+					<img
+						src="img/tableau_icon.svg"
+						title="tableau icon"
+						width="40"
+						height="40"
+					/>
+				</a>
+
+				<!-- Email icon -->
+				<a
+					class="footer__social"
+					href="mailto:emilygdavies42@gmail.com"
+					target="_blank"
+				>
+					<img
+						src="img/email_icon.svg"
+						title="email icon"
 						width="40"
 						height="40"
 					/>
