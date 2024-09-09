@@ -217,5 +217,18 @@
 				</a>
 			</div>
 		</footer>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const buttons = document.querySelectorAll('.about__button');
+
+				buttons.forEach((button) => {
+					button.addEventListener('click', function () {
+						const paragraph = this.nextElementSibling;
+						paragraph.classList.toggle('show');
+					});
+				});
+			});
+		</script>
 	</body>
 </html>
