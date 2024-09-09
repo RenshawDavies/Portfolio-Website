@@ -238,13 +238,6 @@ h2 {
 	line-height: 2rem;
 }
 
-
-#resume-container {
-	text-align: center;
-}
-
-#resume-button {
-	display: inline-block;
 .about__p.show {
 	display: block;
 	margin: 1rem;
@@ -305,28 +298,31 @@ h2 {
 	} */
 }
 
-/* CONTACT */
-#contact__info {
-	font-family: var(--primary-font);
-	text-align: center;
-	width: auto;
-	color: var(--primary-color-lighter);
-	border-style: outset;
-	border-color: var(--opaque-blue);
-	border-radius: 25%;
+/* RESUME  */
+.resume__buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 2rem;
 }
 
-.contact__item {
-	background-color: var(--primary-color-darker);
-	width: auto;
-	padding: 5%;
-	margin: auto;
-	margin-top: 5%;
-	width: 50%;
+#resume__img {
+	width: 60%;
+	height: auto;
+	display: block;
+	margin-top: 5rem;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1rem solid var(--accent-color);
 }
 
-.contact__link {
-	font-size: 2rem;
+.resume__button {
+	display: flex;
+	margin-top: 3rem;
+	justify-content: center;
+	align-items: center;
+	width: 20rem;
 }
 
 /* FOOTER */
@@ -369,6 +365,29 @@ h2 {
 		font-size: 1.5rem;
 		margin: auto;
 	}
+
+	#resume__img {
+		width: 80%;
+	}
+}
+
+@media all and (max-width: 1000px) {
+	#home__img {
+		max-width: 80%;
+		max-height: auto;
+		aspect-ratio: 1/1;
+	}
+}
+
+@media all and (max-width: 900px) {
+	.greeting {
+		flex-direction: column;
+	}
+
+	.greeting__item {
+		flex: none;
+		width: 100%;
+	}
 }
 
 @media all and (max-width: 800px) {
@@ -401,8 +420,6 @@ h2 {
 		border: 0.5rem solid var(--opaque-blue);
 	}
 
-	a.contact__link {
-		font-size: 1rem;
 	#resume__img {
 		margin-top: 2rem;
 		width: 90%;
