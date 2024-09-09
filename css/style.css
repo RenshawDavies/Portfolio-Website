@@ -236,6 +236,7 @@ h2 {
 
 .about__p {
 	line-height: 2rem;
+	display: none;
 }
 
 .about__p.show {
