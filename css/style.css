@@ -204,6 +204,10 @@ button:focus,
 
 /* ABOUT */
 
+h2 {
+	font-size: 2rem;
+}
+
 #about__main {
 	margin-left: 10%;
 	margin-right: 10%;
@@ -220,6 +224,7 @@ button:focus,
 	text-align: center;
 	margin: 2rem;
 	margin-top: 5rem;
+	line-height: 3rem;
 }
 
 .about__h2 {
@@ -228,10 +233,6 @@ button:focus,
 	font-size: 1.25rem;
 	margin: 2rem;
 	line-height: 3rem;
-}
-
-h2 {
-	font-size: 2rem;
 }
 
 .about__p {
@@ -378,6 +379,10 @@ h2 {
 		max-height: auto;
 		aspect-ratio: 1/1;
 	}
+
+	.about__button {
+		font-size: 1rem;
+	}
 }
 
 @media all and (max-width: 900px) {
@@ -388,6 +393,10 @@ h2 {
 	.greeting__item {
 		flex: none;
 		width: 100%;
+	}
+
+	.about__h1 {
+		margin-top: 1rem;
 	}
 }
 
@@ -410,8 +419,22 @@ h2 {
 		font-size: 1rem;
 	}
 
+	#about__main {
+		margin: 1rem;
+	}
+
 	.about__h1 {
-		margin-top: 2rem;
+		margin: 0rem;
+	}
+
+	.about__h2 {
+		margin: 0rem;
+		margin-top: 1rem;
+		font-size: 1rem;
+	}
+
+	.about__button {
+		font-size: 0.75rem;
 	}
 
 	.work__grid {
@@ -426,12 +449,17 @@ h2 {
 		width: 90%;
 		border: 0.5rem solid var(--accent-color);
 	}
+
+	.footer_icon {
+		width: 30px;
+		width: 30px;
+	}
 }
 
 @media all and (max-width: 450px) {
-	.fa-solid {
+	/* .fa-solid {
 		visibility: hidden;
-	}
+	} */
 
 	h1 {
 		font-size: 1.5rem;
@@ -452,6 +480,14 @@ h2 {
 	#about__main {
 		margin-left: 5%;
 		margin-right: 5%;
+	}
+
+	.about__h2 {
+		font-size: 0.75rem;
+	}
+
+	.about__button {
+		font-size: 0.5rem;
 	}
 
 	.work__grid {
